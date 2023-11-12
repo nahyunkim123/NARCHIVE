@@ -3,18 +3,39 @@
     
       {
         "ko_title": "환영합니다",
-        "ko_title2": "나카이브입니다",
         "en_title": "WELCOME!",
         "cn_title": "欢迎光临 ",
-        "cn_title2": "这是NARCHIVE",
         "jp_title": "ようこそ ",
-        "jp_title2": "これはNARCHIVEです",
         "ko_desc1": "프론트엔드 개발자 김나현입니다",
         "en_desc1": "I'm frontend developer NAHYUN KIM",
         "cn_desc1": "我是前端开发者金娜贤！",
         "jp_desc1": "キム·ナヒョンです！"
      
         
+      }
+     
+      
+    ],
+    "info": [
+    
+      {
+        "img":"images/mainprofile.jpeg",
+        "title": "ABOUT",
+        "subtitle1":"WHO I AM",
+        "subtitle2":"HOW I WORK",
+        "subtitle3":"WHAT I'M INTERESTED IN",
+        "ko_desc1": "호기심이 많아 다양한 것을 탐구하고 새로운 기술을 배우는 것을 좋아합니다",
+        "ko_desc2": "협업을 중시하며 다양한 사람들의 소통을 중시합니다",
+        "ko_desc3": "사용자 경험을 개선하고 직관적인 인터페이스를 갖춘 웹사이트를 구축하는 것에 관심이 있습니다",
+        "en_desc1": "I have a curious mind and enjoy exploring various things and learning new technologies",
+        "en_desc2": "I prioritize collaboration and value communication with diverse people",
+        "en_desc3": "I am interested in improving user experience and building websites with intuitive interfaces",
+        "cn_desc1": "我有着好奇心，喜欢探索各种事物并学习新技术",
+        "cn_desc2": "我重视协作，注重与不同的人进行沟通",
+        "cn_desc3": "我对改善用户体验并构建具有直观界面的网站很感兴趣",
+        "jp_desc1": "私は好奇心があり、さまざまなことを探求し、新しい技術を学ぶことが好きです",
+        "jp_desc2": "私は協力を重視し、さまざまな人々とのコミュニケーションを大切にします",
+        "jp_desc3": "私はユーザーエクスペリエンスを改善し、直感的なインターフェースを備えたウェブサイトを構築することに興味があります"  
       }
      
       
@@ -361,8 +382,8 @@
    "education" :[
 
     {
-        "title":"(혼합 + 디지털 컨버전스)React를 활용한 프론트엔드 개발자 양성 (SPA 프로젝트 개발)(A) - 900시간  수료",
-        "date":"23.06~23.11"
+      "title":"(혼합 + 디지털 컨버전스)React를 활용한 프론트엔드 개발자 양성 (SPA 프로젝트 개발)(A) - 900시간  수료",
+      "date":"23.06 ~ 23.11"
     },
     {
     "title":" 코멘토",
@@ -373,11 +394,6 @@
    "title":"그린온라인캠프",
    "desc":"디지털역량 제고를 위한 다이나믹 클라이언트 사이드 스크립트 기초 수강",
    "date":"2023.08 ~ 2023.08"
-    },
-    {
-  "title":"중국언어문화학과 / 경영학과 졸업",
-  "desc":"",
-  "date":" 23.02"
     }
    
 

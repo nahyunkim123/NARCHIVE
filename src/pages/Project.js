@@ -62,7 +62,7 @@ const Content = styled.div`
 
 const HoverBg = styled.div`
   transition: 0.3s;
-  height: 90%;
+  height: 100%;
     &:hover{
     background-color: ${(props) => props.theme.colors.Secondary};
     border-radius: 5px;
@@ -70,7 +70,6 @@ const HoverBg = styled.div`
 `
 
 const Num = styled.div`
-
   width: 100%;
   text-align: center;
   font-family: 'Actor', sans-serif;
@@ -81,7 +80,6 @@ const Num = styled.div`
 `
 
 const MainColor = styled.div`
-
   width: 100%;
   height: 200px;
   background: ${(props) => props.background};
@@ -89,7 +87,7 @@ const MainColor = styled.div`
 
 `
 const MainImg = styled.div`
-     width: 100%;
+  width: 100%;
   height: 200px;
   >img{
     object-fit: cover;
@@ -140,7 +138,11 @@ const Skill = styled.div`
   position: absolute;
   bottom: 0;
 `
-
+const CateWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding-right: 22px;
+`
 
 const ModeBtn = styled.button`
   background: none;
@@ -150,18 +152,22 @@ const ModeBtn = styled.button`
   font-weight: bold;
   color: ${(props) => props.theme.colors.Color};
   transition: 0.3s;
+  cursor: pointer;
   &:hover{
     background:  ${(props) => props.theme.colors.BgColor};
-    color: white;
   }
 `
 const CateUl = styled.ul`
   display: flex;
-  width: 30%;
+  flex-basis: 30%;
   justify-content: space-between;
 `
 const CateLi = styled.li`
   cursor: pointer;
+  &:hover{
+    color: #0029FF;
+    font-weight: 900;
+  }
 `
 
 function Project({setNavOpen}) {
@@ -169,6 +175,7 @@ function Project({setNavOpen}) {
   const [sources, setSources] = useState([]);
   const [isActive, setIsActive] = useState(false)
   const language = useSelector((state) => state.language);
+
   const [selectedCategory, setSelectedCategory] = useState('TOTAL');
   useEffect(() => {
     setSources(data.project);
@@ -194,7 +201,9 @@ function Project({setNavOpen}) {
 
   return (
 
-    <BG onClick={()=>setNavOpen(false)}>
+    <BG onClick={()=>{
+      setNavOpen(false)
+    }}>
           
           <ContainerWrap>
        
@@ -204,13 +213,22 @@ function Project({setNavOpen}) {
             exit={{opacity:0}}
             
           >
-            <ModeBtn onClick={ShowImage}>{isActive ? "IMGMode" : "TextMode"}</ModeBtn>
-            <CateUl>
-              <CateLi onClick={() => setSelectedCategory('TOTAL')}>TOTAL</CateLi>
-              <CateLi onClick={() => setSelectedCategory('TEAM PRPOJECT')}>TEAM</CateLi>
-              <CateLi onClick={() => setSelectedCategory('TOY PRPOJECT')}>TOY</CateLi>
-              <CateLi onClick={() => setSelectedCategory('CLONE CODING')}>CLONE</CateLi>
-            </CateUl>
+            <CateWrap>
+              <CateUl>
+                <CateLi onClick={() => setSelectedCategory('TOTAL')} 
+                style={{color: selectedCategory === 'TOTAL' ? '#0029FF' : 'black',fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}>TOTAL</CateLi>
+                <CateLi onClick={() => setSelectedCategory('TEAM PRPOJECT')}
+                  style={{color: selectedCategory === 'TEAM PRPOJECT' ? '#0029FF' : 'black',fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
+                >TEAM</CateLi>
+                <CateLi onClick={() => setSelectedCategory('TOY PRPOJECT')}
+                  style={{color: selectedCategory === 'TOY PRPOJECT' ? '#0029FF' : 'black',fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
+                >TOY</CateLi>
+                <CateLi onClick={() => setSelectedCategory('CLONE CODING')}
+                  style={{color: selectedCategory === 'CLONE CODING' ? '#0029FF' : 'black',fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
+                >CLONE</CateLi>
+              </CateUl>
+              <ModeBtn onClick={ShowImage}>{isActive ? "IMGMode" : "TextMode"}</ModeBtn>
+            </CateWrap>
 
           <Container>
         
@@ -221,9 +239,9 @@ function Project({setNavOpen}) {
               return(
                 <Content key={i}>
                                  
+                    <HoverBg>
                           <Link to={e.link}>
                                    <Num>{filterCards().length - i}</Num>
-                                  <HoverBg>
                                
           
                                   {
@@ -274,8 +292,8 @@ function Project({setNavOpen}) {
                                     </DescWrap>
                              
                                    
-                                    </HoverBg>
                                     </Link>
+                                    </HoverBg>
                                 </Content>
                                 )
                               })

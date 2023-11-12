@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
 import { styled } from 'styled-components'
 import data from "./../data/lang.json";
 import './../index.css'
+import { Fade } from 'react-reveal';
 
 
 
 const Content = styled.div`
     width: 100%;
-    margin-top: 40vh;
+    margin-top: 160px;
+    padding-top:  0px 60px;
+    background: rgba(255,255,255,0.5);
+    color: ${(props) => props.theme.colors.Color};
     
 `
 
 const ContentWrap = styled.div`
-    margin: 120px auto;
+    margin: 0 auto;
     max-width: 1280px;
     width: 80%;
     >span{
@@ -24,10 +27,9 @@ const ContentWrap = styled.div`
 
 const TitleWrap = styled.div`
     text-align: center;
-
-  
-        font-size: 3em;
-        font-weight: bold;
+    font-family: 'Lexend', sans-serif;
+    font-size: 8vw;
+    font-weight: bold;
     
 `
 
@@ -90,8 +92,9 @@ function About() {
     <>
         <Content>
         <ContentWrap>
-           
-            <TitleWrap>SKILL</TitleWrap>
+            <Fade bottom cascade>
+                <TitleWrap>SKILL</TitleWrap>
+            </Fade>
             <SkillContent>
                 <LeftCon>
                     <h3>Frontend</h3>

@@ -184,7 +184,7 @@ function DragSet ({ThemeSelect,themeConfig}) {
           </IconWrap>
         </MagWrap>
         <NavLi>
-          <Lang />
+          <Lang/>
         </NavLi>
       </NavWrap>
     </Draggable>

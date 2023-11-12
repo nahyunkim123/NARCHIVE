@@ -24,20 +24,19 @@ const LanguageOptions = styled.ul`
   left: -70px;
   opacity: ${(props) => (props.isopen ? 1 : 0)};
   backdrop-filter: blur(12px);
-  background-color: rgba(255, 255, 255, 0.5);
   transition: 0.3s ease-in;
   flex-direction: column;
-  background: none;
   color: gray;
   list-style: none;
   padding: 0;
   margin: 0;
-  
+
 `;
 
 const LanguageOption = styled.li`
   cursor: pointer;
   width: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
   height: 60px;
   line-height: 60px;
   text-align: center;

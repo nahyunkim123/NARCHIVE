@@ -16,8 +16,9 @@ const Nav = styled.div`
   position: fixed;
   top: 0;
   right: 0px;
-  height: 80%;
+  height: 100%;
   z-index: 1000;
+  padding-left: 10px;
   width: 0;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);

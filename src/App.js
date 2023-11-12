@@ -1,25 +1,17 @@
 
 import { Route, Routes, useLocation } from 'react-router-dom';
-import './App.css';
-import GloabalStyle from "./components/GlobalStyle"
-
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Project from './pages/Project';
 import NotFound from './pages/NotFound';
-
-
 import About from './pages/About';
-
 import Aside from './components/Aside';
-
 import DragSet from "./components/DragSet";
 import Mnav from './components/Mnav';
 import PCNav from './components/PCNav';
 import { ThemeProvider, styled } from 'styled-components';
 import { AnimatePresence } from "framer-motion";
-import { Provider } from 'react-redux';
 import GlobalStyle from './components/GlobalStyle';
-import { Link } from 'react-router-dom';
+
 
 
 
@@ -45,8 +37,8 @@ function App() {
   const light = {
     colors : {
       Primary : "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);",
-      Secondary : "#eee",
-      BgColor : "#fff;",
+      Secondary : "#F9F9F9",
+      BgColor : "#fff",
       Color : "#101010",
       ContentBg : "#fff"
       
@@ -56,9 +48,9 @@ function App() {
   const dark ={
     colors : {
       Primary : "#333",
-      Secondary : "#707173",
+      Secondary : "#424242",
       BgColor : "#333",
-      Color : "#fff",
+      Color : "#efefef",
       ContentBg : "#424242",
       SelectBg : "#707173"
   
@@ -78,6 +70,9 @@ function App() {
   };
 
 
+ 
+
+
   return (
   
  
@@ -90,14 +85,14 @@ function App() {
          </Nav>
               <HamBtn>
 
-              <Mnav toggleNav={toggleNav} navOpen={navOpen} setNavOpen={setNavOpen}/>
+              <Mnav toggleNav={toggleNav} navOpen={navOpen} setNavOpen={setNavOpen} />
               </HamBtn>
               <GlobalStyle/>
-              <DragSet ThemeSelect={ThemeSelect}  themeConfig={themeConfig}/>
+              <DragSet ThemeSelect={ThemeSelect} themeConfig={themeConfig} />
                 <AnimatePresence>
                   <Routes location={location} key={location.pathname}>
                    
-                    <Route path="/" element={<About navOpen={navOpen} setNavOpen={setNavOpen}/>} />
+                    <Route path="/" element={<About navOpen={navOpen} setNavOpen={setNavOpen} />} />
                     <Route path="/project" element={<Project navOpen={navOpen} setNavOpen={setNavOpen}/>} />
                     <Route path="/*" element={<NotFound/>} />
                     

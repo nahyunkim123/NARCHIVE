@@ -1,15 +1,24 @@
 import React from 'react'
 import { styled } from 'styled-components'
 
+
+const TxtWrap = styled.div`
+  width: 100vw;
+  height: 30px;
+  position: relative;
+
+`
+
 const Txt = styled.div`
-  margin-top: 40px;
   padding-bottom: 10px;
   text-align: center;
+
 `
 function Copyright() {
   return (
-   
+      <TxtWrap>
         <Txt>©2023 Nahyun Kim All rights reserved</Txt>
+      </TxtWrap>
    
   )
 }

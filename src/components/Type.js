@@ -46,7 +46,7 @@ const DescTxt = `
         setTimeout(() => {
           setCount(0);
           setDesc('');
-        }, 2000);
+        }, 700);
       }
   
    
@@ -58,11 +58,9 @@ const DescTxt = `
 
   return (
     <ContainerWrap>
-     
       <Content>
-      {desc}
-    
-    </Content>
+        {desc}
+      </Content>
     </ContainerWrap>
   )
 }

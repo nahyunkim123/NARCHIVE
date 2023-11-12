@@ -23,7 +23,8 @@ const Message = styled.div`
     margin-bottom: 5px;
     text-align: center;
     transition: all 0.3s ease;
-   
+    padding: 15px 0px;
+    position: relative;
     &:nth-child(3) {
         flex-basis: 100%;
    
@@ -34,15 +35,18 @@ const Message = styled.div`
   
 `;
 const MWrapper = styled.div`
-    padding: 5px 30px;
-    padding-bottom: 36px;
-    position: relative;
-    p {
-      
-      &:nth-child(3){
-        position: absolute;
-        bottom: 10px;
+    padding: 15px 30px;
+    padding-bottom: 35px;
 
+    p {
+        &:nth-child(1){
+            padding: 5px;
+            
+      }
+      &:nth-child(2){
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
         font-weight: bold;
       }
     }
@@ -62,9 +66,14 @@ const TitleWrap = styled.div`
 `;
 
 const Title = styled.div`
-    font-size: 3em;
+    font-size: 8vw;
+    font-family: 'Lexend', sans-serif;
     font-weight: bold;
 `;
+
+const TitleDesc = styled.p`
+    font-size: 2vw;
+`
 
 const Year = styled.p`
     position: absolute;
@@ -101,12 +110,12 @@ function YearBook() {
                                 {language === "cn" && e.cn_title}
                                 {language === "jp" && e.jp_title}
                             </Title>
-                            <p>
+                            <TitleDesc>
                                 {language === "ko" && e.ko_desc}
                                 {language === "en" && e.en_desc}
                                 {language === "cn" && e.cn_desc}
                                 {language === "jp" && e.jp_desc}
-                            </p>
+                            </TitleDesc>
                         </>
                     );
                 })}
@@ -116,7 +125,6 @@ function YearBook() {
                 return (
                     <Message key={i}>
                         <MWrapper>
-                            <img src={e.image} alt="Profile" />
                           <p>{e.content}</p>
                           <p>{e.team}, {e.nickname}</p>
                           </MWrapper>

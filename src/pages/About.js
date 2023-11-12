@@ -5,13 +5,15 @@ import Education from "./../components/Education"
 import Skill from "./../components/Skill"
 import Profile from "./../components/Profile"
 import YearBook from "./../components/YearBook"
-
+import Info from "./../components/Info"
 import Copyright from "./../components/Copyright"
+import Contact from "./../components/Contact"
+import Background from "../components/Background";
 
 
 
 const BG = styled.div`
-   width: 100vw;
+  width: 100vw;
   height: auto;
   background:  ${(props) => props.theme.colors.BgColor};
   color: ${(props) => props.theme.colors.Color};
@@ -39,7 +41,7 @@ const Window = styled.div`
 
 const Main = styled.div`
   flex-basis: 100%;
-
+  z-index: 100;
 `;
 
 
@@ -58,8 +60,11 @@ function About ({setNavOpen}) {
 
 
   return (
-    <BG onClick={(()=>setNavOpen(false))}>
 
+    <>
+    <Background/>
+    <BG onClick={(()=>setNavOpen(false))}>
+    
       <motion.div
 
       animate={{ opacity: 1 }}
@@ -69,17 +74,19 @@ function About ({setNavOpen}) {
  
         <Main>
           <Profile/>
-    
+          <Info/>
           <Skill/>
           <Education/>
           <Wrap>
             <YearBook/>
           </Wrap>
+          <Contact/>
         </Main>
       </Window>
-   </motion.div>
-   <Copyright/>
+      </motion.div>
+       <Copyright/>
       </BG>
+    </>
   );
 };
 
