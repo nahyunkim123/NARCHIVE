@@ -1,0 +1,436 @@
+{   
+    "main": [
+    
+      {
+        "ko_title": "환영합니다",
+        "ko_title2": "나카이브입니다",
+        "en_title": "WELCOME!",
+        "cn_title": "欢迎光临 ",
+        "cn_title2": "这是NARCHIVE",
+        "jp_title": "ようこそ ",
+        "jp_title2": "これはNARCHIVEです",
+        "ko_desc1": "프론트엔드 개발자 김나현입니다",
+        "en_desc1": "I'm frontend developer NAHYUN KIM",
+        "cn_desc1": "我是前端开发者金娜贤！",
+        "jp_desc1": "キム·ナヒョンです！"
+     
+        
+      }
+     
+      
+    ],
+    "Nav": [
+      {  "component":"About",
+        "ko_nav": "소개하기",
+        "en_nav": "INFO",
+        "cn_nav": "自己介绍",
+        "jp_nav": "自己紹介",
+        "link":"/"
+      },
+      { 
+        
+        "component":"Project",
+        "ko_nav": "작업물",
+        "en_nav": "PROJECTS",
+        "cn_nav": "作品集",
+        "jp_nav": "プロジェクト ",
+        "link":"/project"
+      }
+      
+    ],
+
+    "about": [
+      {  "component":"Profile",
+        "title": "Profile"
+      },
+      { "component":"Skill",
+        "title": "Skill"
+      }
+      ,
+      { "component":"Education",
+        "title": "Education"
+      }
+    ],
+
+
+    "Skill": [
+      {
+
+        "Frontend": [
+          {
+            "name": "JavaScript"
+          }
+          ,
+             {
+            "name": "HTML5"
+          }
+          ,{
+            "name": "CSS3"
+       
+          }
+          ,{
+            "name": "StyledComponent"
+          }
+          ,{
+            "name": "TailwindCSS"
+          }
+          ,{
+            "name": "SASS"
+          }
+          ,
+          {
+            "name": "Webpack"
+          }
+          ,{
+            "name": "ES6"
+          }
+          ,{
+            "name": "Babel"
+          }
+          ,{
+            "name": "Redux"
+          }
+          ,{
+            "name": "React"
+          }
+          ,{
+            "name": "Next.js"
+          }
+          ,{
+            "name": "TypeScript"
+          },
+          {
+            "name": "Framer-motion"
+          }
+          ,{
+            "name": "Emotion"
+          }
+        ],
+        "Backend": [
+          {
+            "name": "Node.js"
+          }
+          ,{
+            "name": "express.js"
+          }
+     
+        
+        ],
+        "Tools": [
+          {
+            "name": "Github"
+          }
+          ,{
+            "name": "Git"
+          }
+          ,{
+            "name": "Figma"
+          }
+          ,{
+            "name": "Notion"
+          }
+          ,{
+            "name": "Slack"
+          }
+      
+        
+        ],
+        "Database": [
+          {
+            "name": "Firebase"
+          }
+          ,{
+            "name": "MongoDB"
+          },
+          {
+            "name": "MySQL"
+          }
+        
+        ],
+        "Interest": [
+          {
+            "name": "# React"
+          }
+          ,{
+            "name": "# Next.js"
+          }
+          ,{
+            "name": "# Typescript"
+          }
+          ,{
+            "name": "# CSR & SSR"
+          }
+        
+        ]
+
+
+      }
+
+
+    ],
+    
+    "project": [
+
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "오늘의 운세",
+        "en_title": "DAILY HOROSCOPE",
+        "cn_title": "今日运势网站",
+        "jp_title": "今日の運勢ウェブサイト",
+        "skills": " Next.js / Typescript / RESTful API",
+        "ko_desc" : "운세 API를 활용한 오늘의 운세 사이트입니다",
+        "en_desc": "Today's fortune-telling website using fortune API",
+        "cn_desc": "使用占卜API的今日占卜网站",
+        "jp_desc": "占いAPIを利用した今日の占いサイトです",
+        "days": "1 day",
+        "date": "NOV 2023",
+        "img": "images/dailyhoroscope.png",
+        "main_color": "#5EC269",
+        "link":"https://www.notion.so/knhbank/8d9f6f0b5aa1420bae8374e694323080?pvs=4"
+      },
+
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "택배 배송 조회",
+        "en_title": "TRACKING PACKAGE",
+        "cn_title": "自动售货机",
+        "jp_title": "自販機",
+        "skills": " React / Typescript/ Restful API",
+        "ko_desc" : "스마트 택배 API를 활용한 택배 실시간 배송 조회 시스템입니다",
+        "en_desc": "It's a real-time parcel delivery tracking system powered by the Smart Courier API",
+        "cn_desc": "这是一个使用智能快递API的实时包裹配送跟踪系统",
+        "jp_desc": "これはスマート宅配APIを使用したリアルタイムの小包配達追跡システムです",
+        "days": "2 days",
+        "date": "JUL 2023",
+        "img": "images/trackingpost.png",
+        "main_color": "linear-gradient(to right, #fff 0%, #f7f7f7 100%);",
+        "link":"https://daily-horoscope-lemon.vercel.app"
+      },
+      {
+        "option" : "TEAM PRPOJECT",
+        "ko_title": "그린핑",
+        "en_title": "GREENPING",
+        "cn_title": "GREENPING",
+        "jp_title": "GREENPING",
+        "skills": "React / styled-component / Node.js / Firebase",
+        "ko_desc" : "한국관광공사 API를 활용한 캠핑 예약 웹사이트입니다",
+        "en_desc": "It's a camping reservation website using the Korea Tourism Organization API",
+        "cn_desc": "这是一个使用韩国旅游组织API的露营预订网站",
+        "jp_desc": "韓国観光公社APIを使用したキャンプ予約ウェブサイトです",
+        "days": "28 days",
+        "date": "Sep 2023",
+        "main_color": "#CFFEA8",
+        "img": "images/greenping.png",
+        "link":"https://project-greenping.vercel.app/"
+      },
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "LET'S 퀴즈",
+        "en_title": "LET'S QUIZ",
+        "cn_title": "LET'S 猜谜",
+        "jp_title": "LET'S クイズ",
+        "skills": "React / Tailwindcss",
+        "ko_desc" : "HTML,CSS,JS 문제를 풀 수 있는 웹사이트입니다",
+        "en_desc": "A website where you can solve HTML, CSS, and JavaScript problems",
+        "cn_desc": "一个可以解决HTML、CSS和JavaScript问题的网站",
+        "jp_desc": "HTML、CSS、およびJavaScriptの問題を解くことができるウェブサイトです",
+        "days": "3 days",
+        "date": "Aug 2023",
+        "main_color": "#4E80EE",
+        "img": "images/Quiz.png",
+        "link":"https://github.com/nahyunkim123/Quiz"
+      },
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "알람",
+        "en_title": "Alarm",
+        "cn_title": "警报",
+        "jp_title": "アラーム",
+        "skills": "html / scss / js",
+        "ko_desc" : "알람 추가와 D-Day 계산이 가능한 알람 기능입니다",
+        "en_desc": "Alarm feature that allows you to add alarms and calculate D-Days",
+        "cn_desc": "允许添加警报并计算D-Day的警报功能",
+        "jp_desc": "アラームを追加し、D-Dayを計算できるアラーム機能です",
+        "days": "1 day",
+        "date": "Aug 2023",
+        "img": "images/Alarm.png",
+        "main_color": "linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(217,217,217,1) 35%, rgba(117,126,201,1) 100%)",
+        "link":"https://github.com/nahyunkim123/SignUp-TodoList"
+      },
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "투두 리스트",
+        "en_title": "TO-DO-LIST",
+        "cn_title": "TO-DO-LIST",
+        "jp_title": "TO-DO-LIST",
+        "skills": "html / scss / js",
+        "ko_desc" : "리스트 추가와 삭제가 가능한 투두리스트입니다",
+        "en_desc": "A to-do list with the ability to add and remove items",
+        "cn_desc": "允许添加和删除项目的待办事项列表功能",
+        "jp_desc": "アイテムの追加と削除が可能なタスクリストの機能",
+        "days": "1 day",
+        "date": "Aug 2023",
+        "img": "images/todolist.png",
+        "main_color": "#fff",
+        "link":"https://github.com/nahyunkim123/SignUp-TodoList"
+      },
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "계산기",
+        "en_title": "CALCULATOR",
+        "cn_title": "计算器",
+        "jp_title": "計算器",
+        "skills": "html / scss / js",
+        "ko_desc" : "기본적인 사칙연산이 가능한 계산기입니다",
+        "en_desc": "It's a calculator function that can perform basic arithmetic operations",
+        "cn_desc": "这是一个可以进行基本算术运算的计算器功能",
+        "jp_desc": "基本的な四則演算が可能な計算機能です",
+        "days": "2 days",
+        "img": "images/calculator.png",
+        "date": "Aug 2023",
+        "main_color": "#F9F9F9",
+        "link":"https://github.com/nahyunkim123/Clock-Calculator"
+      },
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "자판기",
+        "en_title": "VENDING MACHINE",
+        "cn_title": "自动售货机",
+        "jp_title": "自販機",
+        "skills": "html / scss / js",
+        "ko_desc" : "'display: grid' 를 활용해 구현한 자판기입니다",
+        "en_desc": "Vending machine function using 'display: grid'",
+        "cn_desc": "使用 'display: grid' 的自动售货机功能",
+        "jp_desc": "'display:grid'を活用した自動販売機機能",
+        "days": "1 day",
+        "date": "JUL 2023",
+        "img": "images/vendingmachine.png",
+        "main_color": "#FFC1D0",
+        "link":"https://github.com/nahyunkim123/Vending-machine"
+      },
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "무비리스트",
+        "en_title": "MOVIE LIST",
+        "cn_title": "MOVIE LIST",
+        "jp_title": "MOVIE LIST",
+        "skills": "html / css / js",
+        "ko_desc" : "영화를 주제로 하여 아코디언 및 스크롤 이벤트 연습하기 위해 제작한 홈페이지입니다",
+        "en_desc": "A website created for practicing accordion and scroll event using movies as a theme",
+        "cn_desc": "以电影为主题创建的用于练习手风琴和滚动事件的网站",
+        "jp_desc": "映画をテーマにしたアコーディオンとスクロールイベントの練習のために作成されたウェブサイト",
+        "days": "2 days",
+        "date": "AUG 2023",
+        "img": "images/movielist.png",
+        "main_color": "linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);",
+        "link":""
+      },
+  
+  
+      {
+        "option" : "CLONE CODING",
+        "ko_title": "레이카 클론 코딩",
+        "en_title": "LEICA.KR CLONE CODING",
+        "cn_title": "LEICA.KR CLONE CODING",
+        "jp_title": "LEICA.KR CLONE CODING",
+        "skills": "html / css / js",
+        "days": "5 days",
+        "date": "JUL 2023",
+        "img": "images/Leica.png",
+        "main_color": "#000000",
+        "link":"https://github.com/nahyunkim123/Leica"
+      }
+    ],
+    
+    "yearbook":[
+      {
+        "ko_title":"REVIEW",
+        "ko_desc":"동료들의 평가를 담은 공간입니다",
+        "en_title":"YEAR BOOK",
+        "en_subtitle":"How others perceive me",
+        "en_desc":"A Section containing evaluations from colleagues",
+        "cn_title":"同事们的",
+        "cn_subtitle":"别人眼中的我",
+        "cn_desc":"同事们评价的空间",
+        "jp_title":"おれの仲間になれ",
+        "jp_subtitle":"他人から見た私",
+        "jp_desc":"同僚からの評価を収めたスペースです"
+
+      }
+    ],
+   "education" :[
+
+    {
+        "title":"(혼합 + 디지털 컨버전스)React를 활용한 프론트엔드 개발자 양성 (SPA 프로젝트 개발)(A) - 900시간  수료",
+        "date":"23.06~23.11"
+    },
+    {
+    "title":" 코멘토",
+    "desc":" 프론트엔드 현직자와 함께하는 개발 직무 A to Z 수료",
+    "date":"2023.08 ~ 2023.09"
+    },
+    {
+   "title":"그린온라인캠프",
+   "desc":"디지털역량 제고를 위한 다이나믹 클라이언트 사이드 스크립트 기초 수강",
+   "date":"2023.08 ~ 2023.08"
+    },
+    {
+  "title":"중국언어문화학과 / 경영학과 졸업",
+  "desc":"",
+  "date":" 23.02"
+    }
+   
+
+   ] ,
+   "message" :[
+
+    {
+      "content": "나현이와 팀프로젝트를 같이 하며 느낀건데 배움에 대한 궁금증도 많고 이해도가 빨라서 자기가 맡은 역할도 잘해줬을뿐만아니라 다른친구들의 문제도 해결해 주는 똑똑한 친구입니다. 나현이라는 팀원을 만나서 프로젝트를 하는동안 더 밝고 긍정적으로 임할 수 있었던 것 같아요!나현이짱",
+      "team": "팀프로젝트 그린핑",
+      "nickname" : "YUL",
+      "cate":"2023"
+    },
+    {
+      "content": "팀 프로젝트에서 없어서는 안될 중요한 팀원이었습니다.적극적이고 상냥하며 협동심이 풍부한 팀원은 팀 프로젝트의 성공에 핵심적인 역할을 한다는 것을 나현 팀원을 보면서 다시금 깨달았습니다. 너무 수고하셨고, 앞으로도 더욱 빛나는 개발자로 성장하실 거라 믿어요. 미래가 정말 기대되어요 :)",
+      "team": "팀프로젝트 그린핑",
+      "nickname" : "SUKITE",
+      "cate":"2023"
+    },
+    {
+      "content": "나현 개발자님은 지식에 대한 집요함이 있습니다. 개발자 공부를 하다보면 꼬리에 꼬리를 무는 정보들로 인해 많은 학습량이 요구되는데, 이를 적극적이고 능동적으로 수행하는 모습이 가까이 있는 사람들로 하여금 감탄을 자아내게 합니다.이러한 집요함이 한편으로는 무언가에 매몰되면 쉬이 빠져나오지 못한다는 인상을 줄 수 있으나,일의 중요도와 우선순위를 구분하며 유연하게 상황에 대처하는 역량도 함께 지니고 있습니다. 흔치 않은 재능을 가진 분이니, 꼭 저와는 다른 회사에 지원하셔서 경쟁하지 않을 수 있도록 해주시면 매우 감사하겠습니다. ",
+      "team": "스터디 팀원",
+      "nickname" : "JUN",
+      "cate":"2023"
+    },
+    {
+      "content": "나현이는 친절하고 배려심 넘치는 성격으로 다른 사람들에게 긍정적인 영향을 많이 줍니다. 또 열심히 하는 성격에 공부와 코딩 실력이 탁월합니다. 모르는 걸 물어보면 자기가 또 검색해서 알려줄 정도로 착하고 큰 도움이 됩니다.나현이의 긍정적인 성격은 주변에 큰 에너지를 주고 모두를 기분 좋게 만듭니다!",
+      "team": "학원 동료",
+      "nickname" : "SUHO",
+      "cate":"2023"
+    },
+    {
+      "content": "같은 조원이였던 사람으로서 평소 배운 실습에 더하여 새로운 것을 많이 만들려고 노력합니다. 그것을 실현시키고자 공부하고 노력하는 모습이 눈에 보여 멋있는사람 인 것 같습니다. ",
+      "team": "팀프로젝트 그린핑",
+      "nickname" : "익명함수",
+      "cate":"2023"
+    }
+   
+
+   ] ,
+   "contact" :[
+
+    {
+      "title":"EMAIL"
+    },
+    {
+      "title":"GITHUB",
+      "link":"https://github.com/nahyunkim123"
+    },
+    {
+      "title":"NOTION",
+      "link":"https://www.notion.so/knhbank/HELLO-NAHYUN-WORLD-04205e48c2964560a1e3dbc24fe95cfa"
+    }
+
+   ] 
+  }
+  
