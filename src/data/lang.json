@@ -25,7 +25,7 @@
         "subtitle2":"HOW I WORK",
         "subtitle3":"WHAT I'M INTERESTED IN",
         "ko_desc1": "호기심이 많아 다양한 것을 탐구하고 새로운 기술을 배우는 것을 좋아합니다",
-        "ko_desc2": "협업을 중시하며 다양한 사람들의 소통을 중시합니다",
+        "ko_desc2": "협업을 중시하며 다양한 사람들과 소통하는 것을 즐깁니다",
         "ko_desc3": "사용자 경험을 개선하고 직관적인 인터페이스를 갖춘 웹사이트를 구축하는 것에 관심이 있습니다",
         "en_desc1": "I have a curious mind and enjoy exploring various things and learning new technologies",
         "en_desc2": "I prioritize collaboration and value communication with diverse people",
@@ -382,8 +382,8 @@
    "education" :[
 
     {
-      "title":"(혼합 + 디지털 컨버전스)React를 활용한 프론트엔드 개발자 양성 (SPA 프로젝트 개발)(A) - 900시간  수료",
-      "date":"23.06 ~ 23.11"
+      "title":"(혼합 + 디지털 컨버전스)React를 활용한 프론트엔드 개발자 양성 (SPA 프로젝트 개발)(A)",
+      "date":"23.06 ~23.11(수료 예정)"
     },
     {
     "title":" 코멘토",
