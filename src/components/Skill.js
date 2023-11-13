@@ -125,7 +125,7 @@ function About() {
     <>
         <Content>
         <ContentWrap>
-            <Fade bottom cascade>
+            <Fade top delay={500}>
                 <TitleWrap>SKILL</TitleWrap>
             </Fade>
             <SkillContent>

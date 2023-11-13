@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { styled } from 'styled-components';
 import data from "./../data/lang.json";
 import { useSelector } from 'react-redux';
+import { Fade } from 'react-reveal';
 
 const Content = styled.div`
     max-width: 1280px;
@@ -97,27 +98,29 @@ function YearBook() {
 
     return (
         <Content>
-            <TitleWrap>
-                {sources2.map((e, i) => {
-                    return (
-                        <>
-                            <Title>
-                                <Year>2023</Year>
-                                {language === "ko" && e.ko_title}
-                                {language === "en" && e.en_title}
-                                {language === "cn" && e.cn_title}
-                                {language === "jp" && e.jp_title}
-                            </Title>
-                            <TitleDesc>
-                                {language === "ko" && e.ko_desc}
-                                {language === "en" && e.en_desc}
-                                {language === "cn" && e.cn_desc}
-                                {language === "jp" && e.jp_desc}
-                            </TitleDesc>
-                        </>
-                    );
-                })}
-            </TitleWrap>
+           <Fade top>
+                <TitleWrap>
+                    {sources2.map((e, i) => {
+                        return (
+                            <>
+                                <Title>
+                                    <Year>2023</Year>
+                                    {language === "ko" && e.ko_title}
+                                    {language === "en" && e.en_title}
+                                    {language === "cn" && e.cn_title}
+                                    {language === "jp" && e.jp_title}
+                                </Title>
+                                <TitleDesc>
+                                    {language === "ko" && e.ko_desc}
+                                    {language === "en" && e.en_desc}
+                                    {language === "cn" && e.cn_desc}
+                                    {language === "jp" && e.jp_desc}
+                                </TitleDesc>
+                            </>
+                        );
+                    })}
+                </TitleWrap>
+            </Fade>
             <MessageWrap>
             {sources.map((e, i) => {
                 return (
