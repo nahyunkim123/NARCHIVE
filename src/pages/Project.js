@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 import data from "./../data/lang.json";
-
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 
@@ -13,8 +12,6 @@ const BG = styled.div`
    width: 100vw;
   height:auto;
   overflow: hidden;
-
-
   background:  ${(props) => props.theme.colors.BgColor};
   color: ${(props) => props.theme.colors.Color};
 
@@ -139,9 +136,10 @@ const Skill = styled.div`
   bottom: 0;
 `
 const CateWrap = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-right: 22px;
+
 `
 
 const ModeBtn = styled.button`
@@ -149,6 +147,7 @@ const ModeBtn = styled.button`
   border: 1px solid #eee;
   width: 90px;
   height: 40px;
+  margin-right: 22px;
   font-weight: bold;
   color: ${(props) => props.theme.colors.Color};
   transition: 0.3s;
@@ -158,34 +157,39 @@ const ModeBtn = styled.button`
   }
 `
 const CateUl = styled.ul`
+  width: 300px;
   display: flex;
-  flex-basis: 30%;
-  justify-content: space-between;
+  justify-content: start;
+  position: relative;
+  @media screen and (max-width: 640px) {
+    flex-basis: 50%; 
+  }
 `
 const CateLi = styled.li`
   cursor: pointer;
-  &:hover{
-    color: #0029FF;
-    font-weight: 900;
-  }
+  flex-basis: 24%;
+  transition: 0.3s;
+
 `
+
 
 function Project({setNavOpen}) {
 
   const [sources, setSources] = useState([]);
   const [isActive, setIsActive] = useState(false)
   const language = useSelector((state) => state.language);
-
   const [selectedCategory, setSelectedCategory] = useState('TOTAL');
   useEffect(() => {
     setSources(data.project);
   }, []);
 
+  const CateFilter = sources.filter(e => e.option === selectedCategory);
   const filterCards = () => {
     if (selectedCategory === 'TOTAL') {
       return sources;
     } else {
-      return sources.filter(e => e.option === selectedCategory);
+      
+      return CateFilter;
     }
   };
 
@@ -211,20 +215,21 @@ function Project({setNavOpen}) {
             intial={{  opacity:0}}
             animate={{ opacity: 1 }}
             exit={{opacity:0}}
-            
+            transition={{ duration: 1 }}
           >
             <CateWrap>
               <CateUl>
                 <CateLi onClick={() => setSelectedCategory('TOTAL')} 
-                style={{color: selectedCategory === 'TOTAL' ? '#0029FF' : 'black',fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}>TOTAL</CateLi>
+                style={{fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}>
+                 TOTAL</CateLi>
                 <CateLi onClick={() => setSelectedCategory('TEAM PRPOJECT')}
-                  style={{color: selectedCategory === 'TEAM PRPOJECT' ? '#0029FF' : 'black',fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
+                  style={{fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
                 >TEAM</CateLi>
                 <CateLi onClick={() => setSelectedCategory('TOY PRPOJECT')}
-                  style={{color: selectedCategory === 'TOY PRPOJECT' ? '#0029FF' : 'black',fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
+                  style={{fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
                 >TOY</CateLi>
                 <CateLi onClick={() => setSelectedCategory('CLONE CODING')}
-                  style={{color: selectedCategory === 'CLONE CODING' ? '#0029FF' : 'black',fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
+                  style={{fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
                 >CLONE</CateLi>
               </CateUl>
               <ModeBtn onClick={ShowImage}>{isActive ? "IMGMode" : "TextMode"}</ModeBtn>
@@ -299,12 +304,10 @@ function Project({setNavOpen}) {
                               })
                             }
           
-       
-   
-    </Container>
-    </motion.div>
-    </ContainerWrap>
-                            </BG>
+          </Container>
+        </motion.div>
+      </ContainerWrap>
+     </BG>
 
         
   );

@@ -5,13 +5,17 @@ import { useSelector, useDispatch } from "react-redux";
 import { setLanguage, setSelectedLanguage } from "./../store";
 
 const Wrap = styled.div`
+  width: 60%;
   padding: 30px;
   display: flex;
-
+  justify-content: space-between;
   font-size: 16px;
+  @media screen and (max-width:640px){
+    font-size: 2em;
+  }
   div {
     cursor: pointer;
-    padding-left: 10px;
+
   }
 `;
 
@@ -39,7 +43,7 @@ function Languages() {
   return (
     <>
       <Wrap>
-        <Kor style={{ fontWeight: selectedLanguage === 1 ? '800' : '100' }}
+        <Kor style={{ fontWeight: selectedLanguage === 1 ? '900' : '100', color:selectedLanguage === 1 ? 'black' : '#888'}}
           onClick={() => {
             handleLanguageChange("ko");
             handleSelectedLanguageChange(1);
@@ -47,7 +51,7 @@ function Languages() {
         >
           KOR
         </Kor>
-        <Eng style={{ fontWeight: selectedLanguage === 2 ? '800' : '100' }}
+        <Eng style={{ fontWeight: selectedLanguage === 2 ? '900' : '100', color:selectedLanguage === 2 ? 'black' : '#888'}}
           onClick={() => {
             handleLanguageChange("en");
             handleSelectedLanguageChange(2);
@@ -55,7 +59,7 @@ function Languages() {
         >
           ENG
         </Eng>
-        <CHN style={{ fontWeight: selectedLanguage === 3 ? '800' : '100' }}
+        <CHN style={{ fontWeight: selectedLanguage === 3 ? '900' : '100',color:selectedLanguage === 3 ? 'black' : '#888' }}
           onClick={() => {
             handleLanguageChange("cn");
             handleSelectedLanguageChange(3);
@@ -63,7 +67,7 @@ function Languages() {
         >
           CHN
         </CHN>
-        <JPN style={{ fontWeight: selectedLanguage === 4 ? '800' : '100' }}
+        <JPN style={{ fontWeight: selectedLanguage === 4 ? '900' : '100',color:selectedLanguage === 4 ? 'black' : '#888' }}
           onClick={() => {
             handleLanguageChange("jp");
             handleSelectedLanguageChange(4);

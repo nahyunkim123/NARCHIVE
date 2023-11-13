@@ -36,27 +36,25 @@ const Message = styled.div`
 `;
 const MWrapper = styled.div`
     padding: 15px 30px;
-    padding-bottom: 35px;
 
-    p {
-        &:nth-child(1){
-            padding: 5px;
-            
-      }
-      &:nth-child(2){
-        position: absolute;
-        bottom: 5px;
-        left: 50%;
-        font-weight: bold;
-      }
+    p{
+        &:nth-of-type(1){
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 7px;
+
+        }
+        &:nth-of-type(2){
+            padding: 5px 8px;
+        }
+     
     }
     
     img {
-      width: 80px;
-      height: 80px;
+      width: 90px;
+      height: 90px;
       object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 10px;
+      margin-bottom: 0;
     }
 `
 
@@ -125,9 +123,10 @@ function YearBook() {
                 return (
                     <Message key={i}>
                         <MWrapper>
-                          <p>{e.content}</p>
+                          <img src={e.img} alt={e.name} />
                           <p>{e.team}, {e.nickname}</p>
-                          </MWrapper>
+                          <p>{e.content}</p>
+                        </MWrapper>
                     </Message>
                 );
             })}

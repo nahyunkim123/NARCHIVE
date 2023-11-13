@@ -55,10 +55,6 @@ const Wrap = styled.div`
 
 function About ({setNavOpen}) {
 
-
- 
-
-
   return (
 
     <>
@@ -68,7 +64,8 @@ function About ({setNavOpen}) {
       <motion.div
 
       animate={{ opacity: 1 }}
-      exit={{ opacity:0}}
+      exit={{opacity:0}}
+      transition={{ duration: 1 }}
     >
       <Window>
  

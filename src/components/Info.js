@@ -37,10 +37,18 @@ const ConUl = styled.div`
 
 
 const IMG = styled.img`
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 50% 50% 5px 5px;
+    @media screen and (min-width:641px) and (max-width:768px){
+      width: 300px;
+      height: 300px;
+    }
+    @media screen and (max-width:640px){
+      width: 200px;
+      height: 200px;
+    }
   
 `
 

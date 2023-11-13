@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
 import { styled } from 'styled-components'
 import data from "./../data/lang.json";
 import './../index.css'
-import { Timeline } from 'antd';
-
 
 const Content = styled.div`
     width: 100%;
@@ -25,6 +22,7 @@ const TitleWrap = styled.div`
     font-size: 8vw;
     font-family: 'Lexend', sans-serif;
     font-weight: bold;
+    margin-top: 160px;
     
 `
 

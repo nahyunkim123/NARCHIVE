@@ -10,7 +10,7 @@ const Content = styled.div`
     width: 100%;
     margin-top: 160px;
     padding-top:  0px 60px;
-    background: rgba(255,255,255,0.5);
+  
     color: ${(props) => props.theme.colors.Color};
     
 `
@@ -68,7 +68,40 @@ const RightCon = styled.div`
         flex-basis: 100%; 
     }
 `
+const Keyword = styled.div`
+  width: 100%;
+  h3 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2em;
+  }
+`;
 
+const KeywordWrap = styled.div`
+  width: 100%;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+  ul {
+    flex-basis: 20%;
+    text-align: center;
+
+  
+    @media screen and (max-width: 640px) {
+      flex-basis: 100%;
+    }
+    li {
+      padding: 7px;
+      border-radius: 13px;
+      border: 1px solid #555;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+`;
 
 
 function About() {
@@ -140,19 +173,23 @@ function About() {
                         )
                     })
                    }
-                    <h3>Interest</h3>
-                   {
-                    sources5.map((e,i)=>{
-                        return(
-                            <div key={i}>
-                                <p>{e.name}</p>
-                            </div>
-                        )
-                    })
-                   }
+                   
 
                 </RightCon>
-          
+                <Keyword>
+                    <h3>Interest</h3>
+                    <KeywordWrap>
+                        {
+                            sources5.map((e,i)=>{
+                                return(
+                                    <ul key={i}>
+                                        <li>{e.name}</li>
+                                    </ul>
+                                )
+                            })
+                        }
+                    </KeywordWrap>
+                </Keyword>
             </SkillContent>          
   
         </ContentWrap>  
