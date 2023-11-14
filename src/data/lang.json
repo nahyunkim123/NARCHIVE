@@ -207,7 +207,7 @@
         "date": "NOV 2023",
         "img": "images/dailyhoroscope.png",
         "main_color": "#5EC269",
-        "link":"https://www.notion.so/knhbank/8d9f6f0b5aa1420bae8374e694323080?pvs=4"
+        "link":"https://knhbank.notion.site/8d9f6f0b5aa1420bae8374e694323080?pvs=4"
       },
 
       {
@@ -225,7 +225,7 @@
         "date": "JUL 2023",
         "img": "images/trackingpost.png",
         "main_color": "linear-gradient(to right, #fff 0%, #f7f7f7 100%);",
-        "link":"https://daily-horoscope-lemon.vercel.app"
+        "link":"https://www.notion.so/knhbank/dcc803810c624e739a0d9d69ec022b8e?pvs=4"
       },
       {
         "option" : "TEAM PRPOJECT",
@@ -242,7 +242,7 @@
         "date": "Sep 2023",
         "main_color": "#CFFEA8",
         "img": "images/greenping.png",
-        "link":"https://project-greenping.vercel.app/"
+        "link":"https://www.notion.so/knhbank/898cfb8a76e14431b5ee6afbb821c790?pvs=4"
       },
       {
         "option" : "TOY PRPOJECT",
@@ -259,7 +259,7 @@
         "date": "Aug 2023",
         "main_color": "#4E80EE",
         "img": "images/Quiz.png",
-        "link":"https://github.com/nahyunkim123/Quiz"
+        "link":"https://www.notion.so/knhbank/Let-s-Quiz-cd68864810d64d0ab36f8cd4bb662f2a?pvs=4"
       },
       {
         "option" : "TOY PRPOJECT",
@@ -276,7 +276,7 @@
         "date": "Aug 2023",
         "img": "images/Alarm.png",
         "main_color": "linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(217,217,217,1) 35%, rgba(117,126,201,1) 100%)",
-        "link":"https://github.com/nahyunkim123/SignUp-TodoList"
+        "link":"https://www.notion.so/knhbank/8e2ed640b92e43aa90f3368d9e3b3a0a?pvs=4"
       },
       {
         "option" : "TOY PRPOJECT",
@@ -293,7 +293,7 @@
         "date": "Aug 2023",
         "img": "images/todolist.png",
         "main_color": "#fff",
-        "link":"https://github.com/nahyunkim123/SignUp-TodoList"
+        "link":"https://www.notion.so/knhbank/1b59df2f3e02438b9350c42be8962b97?pvs=4"
       },
       {
         "option" : "TOY PRPOJECT",
@@ -310,7 +310,7 @@
         "img": "images/calculator.png",
         "date": "Aug 2023",
         "main_color": "#F9F9F9",
-        "link":"https://github.com/nahyunkim123/Clock-Calculator"
+        "link":"https://knhbank.notion.site/bac0d5192aa645fcb9adb2136af098e3?pvs=4"
       },
       {
         "option" : "TOY PRPOJECT",
@@ -327,7 +327,7 @@
         "date": "JUL 2023",
         "img": "images/vendingmachine.png",
         "main_color": "#FFC1D0",
-        "link":"https://github.com/nahyunkim123/Vending-machine"
+        "link":"https://www.notion.so/knhbank/bf5d692d0a694e18aa058668f2e4de3f?pvs=4"
       },
       {
         "option" : "TOY PRPOJECT",
@@ -344,7 +344,7 @@
         "date": "AUG 2023",
         "img": "images/movielist.png",
         "main_color": "linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);",
-        "link":""
+        "link":"https://www.notion.so/knhbank/Movie-List-9720376152dc42a5b7b47bd52c886daa?pvs=4"
       },
   
   
@@ -359,7 +359,7 @@
         "date": "JUL 2023",
         "img": "images/Leica.png",
         "main_color": "#000000",
-        "link":"https://github.com/nahyunkim123/Leica"
+        "link":"https://knhbank.notion.site/dcfd0f4fdacb424e9fc497b6a2bd0c81?pvs=4"
       }
     ],
     
