@@ -17,7 +17,7 @@ const Content = styled.div`
 `
 const MainAd = styled.h2`
     font-family: 'Lexend', sans-serif;
-    font-size: 5vw;    
+    font-size: 4vw;    
     margin-top: 5px;
     margin-bottom: 0;
    
@@ -59,7 +59,7 @@ function Contact() {
         <ContentWrap>
             <Content>
                 <TitleWrap>CONTACT</TitleWrap>
-                <MainAd>developernarong@naver.com</MainAd>
+                <MainAd>developernarong@gmail.com</MainAd>
                 <Channel>
                     <div onClick={() => handleOpen("https://www.notion.so/knhbank/HELLO-NAHYUN-WORLD-04205e48c2964560a1e3dbc24fe95cfa")}>
                        
