@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { styled } from 'styled-components';
 import data from "./../data/lang.json";
 import { useSelector } from 'react-redux';
-import { Fade } from 'react-reveal';
+
 
 const Content = styled.div`
     max-width: 1280px;
@@ -98,7 +98,7 @@ function YearBook() {
 
     return (
         <Content>
-           <Fade top>
+        
                 <TitleWrap>
                     {sources2.map((e, i) => {
                         return (
@@ -120,7 +120,7 @@ function YearBook() {
                         );
                     })}
                 </TitleWrap>
-            </Fade>
+          
             <MessageWrap>
             {sources.map((e, i) => {
                 return (

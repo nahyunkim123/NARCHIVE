@@ -86,13 +86,13 @@ function About() {
         {sources.map((e, i) => {
           return (
             <ContentWrap key={i}>
-              <Fade top>
+           
                 <Title>{e.title}</Title>
-              </Fade>
+            
               <ConUl>
-                <Fade bottom>
+                
                     <IMG src={e.img} alt="mainprofile" />
-                </Fade>
+             
            
                 <Fade bottom>
                     <DescWrap>

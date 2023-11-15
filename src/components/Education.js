@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { styled } from 'styled-components'
 import data from "./../data/lang.json";
 import './../index.css'
-import { Fade } from 'react-reveal';
+
 
 const Content = styled.div`
     width: 100%;
@@ -110,11 +110,11 @@ function About() {
     <>
         <Content>
         <ContentWrap>
-            <Fade top>
+            
                 <TitleWrap>
                     EDUCATION
                 </TitleWrap>
-            </Fade>
+          
             <SkillContent>
                 
      
