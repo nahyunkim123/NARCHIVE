@@ -13,7 +13,7 @@ const Nav = styled.div`
   top: 0;
   right: 0px;
   height: 100vh;
-  z-index: 1000;
+  z-index: 100000000;
   padding-left: 12px;
   width: ${(props)=> props.navOpen ? '40vw':'0px'};
   background-color: rgba(255, 255, 255, 0.5);
