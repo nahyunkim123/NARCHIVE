@@ -20,7 +20,7 @@ const ContentWrap = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 5em;
+  font-size: 8vw;
   font-weight: bold;
   font-family: 'Lexend', sans-serif;
   
@@ -28,8 +28,6 @@ const Title = styled.p`
 
 const ConUl = styled.div`
   width: 100%;
-  display: flex; 
-  flex-wrap: wrap;
   align-items: center; 
   justify-content: center; 
 `;
@@ -64,8 +62,11 @@ const DescWrap = styled.div`
         font-family: 'Lexend', sans-serif;
     }
     p{
-        font-size: 2vw;
+        font-size: 20px;
         padding: 0px 17px;
+        @media screen and (max-width: 640px){
+          font-size: 15px;
+        }
     }
 `;
 

@@ -9,8 +9,7 @@ import { Fade } from 'react-reveal';
 const Content = styled.div`
     width: 100%;
     margin-top: 160px;
-    padding-top:  0px 60px;
-  
+    padding-top:  0px 60px;  
     color: ${(props) => props.theme.colors.Color};
     
 `
@@ -70,36 +69,34 @@ const RightCon = styled.div`
 `
 const Keyword = styled.div`
   width: 100%;
-  h3 {
-    font-family: 'Lexend', sans-serif;
-    font-size: 2em;
-  }
+  font-size: 20px;
+ >h3{
+    border-bottom: 1px solid ${(props) => props.theme.colors.Color};
+ }
 `;
 
 const KeywordWrap = styled.div`
-  width: 100%;
+ 
   font-size: 1em;
   display: flex;
-  justify-content: center;
-  column-gap: 5px;
+  justify-content: space-between;
   @media screen and (max-width: 768px) {
         flex-wrap: wrap;
     }
-  ul {
-    flex-basis: 20%;
-    text-align: center;
+    ul {
+        flex-basis: 24%;
+        text-align: center;
 
-  
+    @media screen and (min-width: 641px) and (max-width: 768px) {
+      flex-basis: 40%;
+    }
     @media screen and (max-width: 640px) {
-      flex-basis: 100%;
+      flex-basis: 99%;
     }
     li {
-      padding: 7px;
-      border-radius: 13px;
-      border: 1px solid #555;
       font-weight: bold;
-      background: rgba(255, 255, 255, 0.5);
     }
+
   }
 `;
 
