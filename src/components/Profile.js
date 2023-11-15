@@ -9,20 +9,20 @@ import { Reveal } from 'react-reveal';
 
 
 const Content = styled.div`
-    width: 100vw;
-    height: 100vh;
-    margin-top: 30vh;
+    width: 100%;
     color: ${(props) => props.theme.colors.Color};
-    
+
 `
 const Title = styled.h3`
   margin-bottom: 1px;
-  font-size:15vw;
-  
+  font-size: 12vw;
+  @media screen and (min-width: 768px){
+  font-size: 10vw;
+ }
 `
 const ContainerWrap = styled.div`
   width: 80%;
-  margin: 120px auto;
+  margin: 150px auto;
   max-width: 1280px;
 
 
@@ -30,7 +30,7 @@ const ContainerWrap = styled.div`
 
 
 const Intro = styled.div`
-  height: 200px;
+
 `
 
 

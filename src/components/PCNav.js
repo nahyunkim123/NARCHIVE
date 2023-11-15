@@ -17,7 +17,7 @@ const NavWrap = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10000000;
   transition: all 0.3s; 
 
   @media screen and (max-width:640px){

@@ -76,7 +76,7 @@ const TitleDesc = styled.p`
 
 const Year = styled.p`
     position: absolute;
-    left: 10%;
+    left: 25%;
     top: -250px;
     z-index: -1;
     color:  ${(props) => props.theme.colors.BgColor};

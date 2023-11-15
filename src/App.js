@@ -79,10 +79,9 @@ function App() {
       <ThemeProvider theme={DarkMode}>
            
          <>
-         <Nav>
-
-              <PCNav/>
-         </Nav>
+              <Nav>
+                <PCNav/>
+              </Nav>
               <HamBtn>
 
               <Mnav toggleNav={toggleNav} navOpen={navOpen} setNavOpen={setNavOpen} />
@@ -90,18 +89,14 @@ function App() {
               <GlobalStyle/>
               <DragSet ThemeSelect={ThemeSelect} themeConfig={themeConfig} />
                 <AnimatePresence>
-                  <Routes location={location} key={location.pathname}>
-                   
+                  <Routes location={location} key={location.pathname}>  
                     <Route path="/" element={<About navOpen={navOpen} setNavOpen={setNavOpen} />} />
                     <Route path="/project" element={<Project navOpen={navOpen} setNavOpen={setNavOpen}/>} />
                     <Route path="/*" element={<NotFound/>} />
-                    
                   </Routes>
                 </AnimatePresence>
                 <Aside/>
-              </>
-
-
+           </>
 
         </ThemeProvider>
   );

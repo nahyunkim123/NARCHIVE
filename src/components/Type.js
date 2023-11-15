@@ -4,21 +4,20 @@ import { styled } from 'styled-components';
 
 const ContainerWrap = styled.div`
   width: 100%;
-  
   margin: 0px auto; 
-   @media screen and (max-width: 640px){
-    height: 200px;
-  }
+
 
 `
 
 
 
 const Content = styled.p`
-
-font-size:5vw;
-    font-weight: bold;
- 
+  height: 70px;
+  font-size: 5vw;
+  font-weight: bold;
+ @media screen and (min-width: 768px){
+  font-size: 4vw;
+ }
 
 `
 function Type({ language, koDesc, enDesc, cnDesc, jpDesc }) {

@@ -10,13 +10,15 @@ const ContentWrap= styled.div`
 const Content = styled.div`
     width: 80%;
     margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     align-items: start;
 `
 const MainAd = styled.h2`
     font-family: 'Lexend', sans-serif;
-    font-size: 3vw;
+    font-size: 5vw;    
+    margin-top: 5px;
     margin-bottom: 0;
    
 `
@@ -41,7 +43,7 @@ const Channel = styled.div`
 
 const TitleWrap = styled.div`
     font-family: 'Lexend', sans-serif;
-    font-size: 4vw;
+    font-size: 3em;
     border-bottom: 1px solid ${(props) => props.theme.colors.Color};
     font-weight: bold;
 

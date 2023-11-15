@@ -9,19 +9,18 @@ import { Fade } from 'react-reveal';
 
 const Content = styled.div`
   width: 100%;
-    overflow-x: hidden;
-
 `;
 
 const ContentWrap = styled.div`
-  margin: 70px auto;
+  margin: 0px auto;
+  padding-top: 20px;
   text-align: center;
   width: 80%;
 
 `;
 
 const Title = styled.p`
-  font-size: 8vw;
+  font-size: 5em;
   font-weight: bold;
   font-family: 'Lexend', sans-serif;
   
