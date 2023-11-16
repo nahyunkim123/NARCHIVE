@@ -12,9 +12,9 @@ const Nav = styled.div`
   position: fixed;
   top: 0;
   right: 0px;
-  height: 100vh;
-  z-index: 100000000;
-  padding-left: 12px;
+  height: 100%;
+  z-index: 1000000;
+  padding-left: 20px;
   width: ${(props)=> props.navOpen ? '40vw':'0px'};
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);
@@ -22,6 +22,7 @@ const Nav = styled.div`
   transition: 0.5s;
 
   @media screen and (max-width:640px){
+    padding: 10px;
     width: ${(props)=> props.navOpen ? '100vw':'0px'};
   }
 
@@ -35,7 +36,8 @@ const NavLi = styled.div`
     margin-left: 20px;
     margin-top: 30px;
     @media screen and (max-width:640px){
-      font-size: 4em;
+      margin-left: 50px;
+      font-size: 3em;
  
   }
     
@@ -45,15 +47,17 @@ const NavLi = styled.div`
     margin-bottom: 10px;
     @media screen and (max-width:640px){
       
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
       margin-bottom: 10px;
     }
   }
    
 `
 const LangOp =styled.div`
-  margin-top: 5vh;
+  margin-top: 70px;
+  font-size: 1em;
+  margin-left: 20px;
 `
 
 
@@ -69,7 +73,7 @@ const HamWrap = styled.div`
   position: fixed;
   top: 10px;
   right: 10px;
-  z-index: 50000;
+  z-index: 2000000;
 `
 
 const Hamburger = styled.div` 
