@@ -90,13 +90,13 @@
        
           }
           ,{
-            "name": "StyledComponent"
+            "name": "Styledcomponent"
           }
           ,{
             "name": "TailwindCSS"
           }
           ,{
-            "name": "SASS"
+            "name": "Sass"
           }
           ,
           {
@@ -191,6 +191,40 @@
     ],
     
     "project": [
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "MusicBoard",
+        "en_title": "MusicBoard",
+        "cn_title": "MusicBoard",
+        "jp_title": "MusicBoard",
+        "skills": " Next.js / Typescript / MySQL",
+        "ko_desc" : "음악에 관한 의견을 공유할 수 있는 커뮤니티 사이트입니다",
+        "en_desc": "",
+        "cn_desc": "",
+        "jp_desc": "",
+        "days": "7 days",
+        "date": "Nov 2023",
+        "img": "",
+        "main_color": "black",
+        "link":""
+      },
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "NARCHIVE",
+        "en_title": "NARCHIVE",
+        "cn_title": "NARCHIVE",
+        "jp_title": "NARCHIVE",
+        "skills": "React / styled-component / Redux",
+        "ko_desc" : "프론트엔드 개발자 김나현 포트폴리오 사이트입니다",
+        "en_desc": "",
+        "cn_desc": "",
+        "jp_desc": "",
+        "days": "20 days",
+        "date": "NOV 2023",
+        "img": "images/dailyhoroscope.png",
+        "main_color": "#5EC269",
+        "link":"https://knhbank.notion.site/8d9f6f0b5aa1420bae8374e694323080?pvs=4"
+      },
 
       {
         "option" : "TOY PRPOJECT",
@@ -207,7 +241,7 @@
         "date": "NOV 2023",
         "img": "images/dailyhoroscope.png",
         "main_color": "#5EC269",
-        "link":"https://knhbank.notion.site/8d9f6f0b5aa1420bae8374e694323080?pvs=4"
+        "link":"https://knhbank.notion.site/64986d7253a046f098f7f45399e643d4?pvs=4"
       },
 
       {
@@ -246,6 +280,23 @@
       },
       {
         "option" : "TOY PRPOJECT",
+        "ko_title": "부산 축제 가자!",
+        "en_title": "Festival of Busan",
+        "cn_title": "Festival of Busan",
+        "jp_title": "Festival of Busan",
+        "skills": "React / styled-component / Node.js / Firebase",
+        "ko_desc" : "부산 축제 정보 조회 웹사이트입니다",
+        "en_desc": "",
+        "cn_desc": "",
+        "jp_desc": "",
+        "days": "3 days",
+        "date": "Sep 2023",
+        "img": "",
+        "main_color": "blue",
+        "link":""
+      },
+      {
+        "option" : "TOY PRPOJECT",
         "ko_title": "LET'S 퀴즈",
         "en_title": "LET'S QUIZ",
         "cn_title": "LET'S 猜谜",
@@ -261,6 +312,7 @@
         "img": "images/Quiz.png",
         "link":"https://www.notion.so/knhbank/Let-s-Quiz-cd68864810d64d0ab36f8cd4bb662f2a?pvs=4"
       },
+   
       {
         "option" : "TOY PRPOJECT",
         "ko_title": "알람",

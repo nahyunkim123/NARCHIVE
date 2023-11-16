@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 
 const BG = styled.div`
-   width: 100vw;
+  width: 100vw;
   height:auto;
   overflow: hidden;
   background:  ${(props) => props.theme.colors.BgColor};
@@ -136,18 +136,17 @@ const Skill = styled.div`
   bottom: 0;
 `
 const CateWrap = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 
 `
 
 const ModeBtn = styled.button`
+  flex-basis: 14%;
   background: none;
   border: 1px solid #eee;
-  width: 90px;
   height: 40px;
-  margin-right: 22px;
   font-weight: bold;
   color: ${(props) => props.theme.colors.Color};
   transition: 0.3s;
@@ -157,18 +156,18 @@ const ModeBtn = styled.button`
   }
 `
 const CateUl = styled.ul`
-  width: 300px;
+  flex-basis: 33%;
+  width: 100%;
   display: flex;
-  justify-content: start;
+  column-gap:4px;
+  justify-content: space-between;
   position: relative;
-  @media screen and (max-width: 640px) {
-    flex-basis: 50%; 
-  }
+
 `
 const CateLi = styled.li`
   cursor: pointer;
   flex-basis: 24%;
-  transition: 0.3s;
+  padding: 0 5px;
 
 `
 
@@ -223,13 +222,13 @@ function Project({setNavOpen}) {
                 style={{fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}>
                  TOTAL</CateLi>
                 <CateLi onClick={() => setSelectedCategory('TEAM PRPOJECT')}
-                  style={{fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
+                  style={{fontWeight :selectedCategory === 'TEAM PRPOJECT' ? 'bold' :'normal'}}
                 >TEAM</CateLi>
                 <CateLi onClick={() => setSelectedCategory('TOY PRPOJECT')}
-                  style={{fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
+                  style={{fontWeight :selectedCategory === 'TOY PRPOJECT' ? 'bold' :'normal'}}
                 >TOY</CateLi>
                 <CateLi onClick={() => setSelectedCategory('CLONE CODING')}
-                  style={{fontWeight :selectedCategory === 'TOTAL' ? 'bold' :'normal'}}
+                  style={{fontWeight :selectedCategory === 'CLONE CODING' ? 'bold' :'normal'}}
                 >CLONE</CateLi>
               </CateUl>
               <ModeBtn onClick={ShowImage}>{isActive ? "IMGMode" : "TextMode"}</ModeBtn>
