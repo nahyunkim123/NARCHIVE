@@ -12,8 +12,7 @@ const Content = styled.div`
 `;
 
 const ContentWrap = styled.div`
-  margin: 0px auto;
-  padding-top: 20px;
+  margin: 180px auto;
   text-align: center;
   width: 80%;
 
@@ -94,7 +93,7 @@ function About() {
                     <IMG src={e.img} alt="mainprofile" />
              
            
-                <Fade bottom>
+                <Fade bottom delay={200}>
                     <DescWrap>
                         <h3># {e.subtitle1}</h3>
                         <p>
@@ -105,7 +104,7 @@ function About() {
                         </p>
                     </DescWrap>
                 </Fade>
-                <Fade bottom cascade delay={500}>
+                <Fade bottom cascade delay={1000}>
                     <DescWrap>
                         <h3># {e.subtitle2}</h3>
                         <p>
@@ -116,7 +115,7 @@ function About() {
                         </p>
                    </DescWrap>
                 </Fade>
-                <Fade bottom cascade delay={1000}> 
+                <Fade bottom cascade delay={2000}> 
                     <DescWrap>
                         <h3># {e.subtitle3}</h3>
                         <p>

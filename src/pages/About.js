@@ -14,7 +14,6 @@ import Background from "../components/Background";
 
 const BG = styled.div`
   width: 100%;
-  height: auto;
   background:  ${(props) => props.theme.colors.BgColor};
   color: ${(props) => props.theme.colors.Color};
 

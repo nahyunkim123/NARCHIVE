@@ -11,14 +11,12 @@ import { styled } from "styled-components";
 const Nav = styled.div`
   position: fixed;
   top: 0;
-  right: 0px;
+  right: -20px;
   height: 100%;
   z-index: 1000000;
-  padding-left: 20px;
-  width: ${(props)=> props.navOpen ? '40vw':'0px'};
+  width: ${(props)=> props.navOpen ? '50vw':'0vw'};
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);
-  overflow: none;
   transition: 0.5s;
 
   @media screen and (max-width:640px){
@@ -35,6 +33,8 @@ const NavLi = styled.div`
     font-weight: bold;
     margin-left: 20px;
     margin-top: 30px;
+
+
     @media screen and (max-width:640px){
       margin-left: 50px;
       font-size: 3em;

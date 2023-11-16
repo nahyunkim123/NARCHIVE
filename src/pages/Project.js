@@ -104,9 +104,8 @@ const Cate = styled.div`
   
 `
 const ContTitle = styled.h3`
-  font-size: 33px;
-  font-family: 'Lexend', sans-serif;
-  font-weight: 300;
+  font-size: 1.5em;
+  font-weight: 500;
   color: ${(props) => props.theme.colors.Color};
   margin-bottom: 4px;
   @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -121,14 +120,13 @@ const DescWrap = styled.div`
 
 const Desc = styled.div`
   font-weight: 200;
-  font-family: 'Lexend', sans-serif;
   color: ${(props) => props.theme.colors.Color};
   margin-bottom: 30px;
 
 
 `
 const Skill = styled.div`
-  font-family: 'Lexend', sans-serif;
+
   color: gray;
   text-align: end;
   font-size: 12px;
@@ -136,7 +134,7 @@ const Skill = styled.div`
   bottom: 0;
 `
 const CateWrap = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 
@@ -161,13 +159,11 @@ const CateUl = styled.ul`
   display: flex;
   column-gap:4px;
   justify-content: space-between;
-  position: relative;
 
 `
 const CateLi = styled.li`
   cursor: pointer;
-  flex-basis: 24%;
-  padding: 0 5px;
+  flex-basis: 25%;
 
 `
 
@@ -223,13 +219,13 @@ function Project({setNavOpen}) {
                  TOTAL</CateLi>
                 <CateLi onClick={() => setSelectedCategory('TEAM PRPOJECT')}
                   style={{fontWeight :selectedCategory === 'TEAM PRPOJECT' ? 'bold' :'normal'}}
-                >TEAM</CateLi>
+                >TEAM({filterCards().filter(e => e.option === 'TEAM PRPOJECT').length})</CateLi>
                 <CateLi onClick={() => setSelectedCategory('TOY PRPOJECT')}
                   style={{fontWeight :selectedCategory === 'TOY PRPOJECT' ? 'bold' :'normal'}}
-                >TOY</CateLi>
+                >TOY ({filterCards().filter(e => e.option === 'TOY PRPOJECT').length})</CateLi>
                 <CateLi onClick={() => setSelectedCategory('CLONE CODING')}
                   style={{fontWeight :selectedCategory === 'CLONE CODING' ? 'bold' :'normal'}}
-                >CLONE</CateLi>
+                >CLONE ({filterCards().filter(e => e.option === 'CLONE CODING').length})</CateLi>
               </CateUl>
               <ModeBtn onClick={ShowImage}>{isActive ? "IMGMode" : "TextMode"}</ModeBtn>
             </CateWrap>

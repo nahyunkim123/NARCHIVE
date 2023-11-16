@@ -136,6 +136,8 @@
           }
      
         
+
+
         ],
         "Tools": [
           {
@@ -221,8 +223,8 @@
         "jp_desc": "",
         "days": "20 days",
         "date": "NOV 2023",
-        "img": "",
-        "main_color": "#5EC269",
+        "img": "images/NARCHIVE.png",
+        "main_color": "#eee",
         "link":"https://knhbank.notion.site/8d9f6f0b5aa1420bae8374e694323080?pvs=4"
       },
 
@@ -239,7 +241,7 @@
         "jp_desc": "占いAPIを利用した今日の占いサイトです",
         "days": "1 day",
         "date": "NOV 2023",
-        "img": "images/dailyhoroscope.png",
+        "img": "images/LUCKY.png",
         "main_color": "#5EC269",
         "link":"https://knhbank.notion.site/64986d7253a046f098f7f45399e643d4?pvs=4"
       },

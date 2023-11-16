@@ -3,12 +3,13 @@ import { styled } from 'styled-components';
 
 const Content = styled.div`
   width: 100vw;
-  height: 100vh;
+
   position: fixed;
   top: 12%;
   transition: opacity 3s ease;
   opacity: ${(props) => (props.isActive ? "0" : "1")};
   right: 5%;
+  background: none;
   justify-content: center;
   align-items: center;
   font-size: 15vw;
