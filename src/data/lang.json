@@ -202,11 +202,11 @@
         "en_desc": "",
         "cn_desc": "",
         "jp_desc": "",
-        "days": "7 days",
+        "days": "5 days",
         "date": "Nov 2023",
         "img": "",
         "main_color": "black",
-        "link":""
+        "link":"https://www.notion.so/knhbank/Music-Board-60aa887b597d4d7ba82193b81a7b3cca?pvs=4"
       },
       {
         "option" : "TOY PRPOJECT",
@@ -221,7 +221,7 @@
         "jp_desc": "",
         "days": "20 days",
         "date": "NOV 2023",
-        "img": "images/dailyhoroscope.png",
+        "img": "",
         "main_color": "#5EC269",
         "link":"https://knhbank.notion.site/8d9f6f0b5aa1420bae8374e694323080?pvs=4"
       },
@@ -284,16 +284,16 @@
         "en_title": "Festival of Busan",
         "cn_title": "Festival of Busan",
         "jp_title": "Festival of Busan",
-        "skills": "React / styled-component / Node.js / Firebase",
-        "ko_desc" : "부산 축제 정보 조회 웹사이트입니다",
+        "skills": "React / styled-component / Rest API",
+        "ko_desc" : "API를 활용한 부산 축제 정보 조회 웹사이트입니다",
         "en_desc": "",
         "cn_desc": "",
         "jp_desc": "",
         "days": "3 days",
         "date": "Sep 2023",
-        "img": "",
-        "main_color": "blue",
-        "link":""
+        "img": "images/festival.png",
+        "main_color": "#EFF7FE",
+        "link":"https://www.notion.so/knhbank/e9292d5e005b4c3fb9e672d9750362ec?pvs=4"
       },
       {
         "option" : "TOY PRPOJECT",
