@@ -11,6 +11,7 @@ import PCNav from './components/PCNav';
 import { ThemeProvider, styled } from 'styled-components';
 import { AnimatePresence } from "framer-motion";
 import GlobalStyle from './components/GlobalStyle';
+import Copyright from './components/Copyright';
 
 
 
@@ -95,6 +96,7 @@ function App() {
                   </Routes>
                 </AnimatePresence>
               <Aside/>
+              <Copyright/>
            </>
 
         </ThemeProvider>

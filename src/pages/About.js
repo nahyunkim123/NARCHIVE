@@ -69,7 +69,7 @@ function About ({setNavOpen}) {
     
       </Window>
       </motion.div>
-       <Copyright/>
+    
       </BG>
     </>
   );
