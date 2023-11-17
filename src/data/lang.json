@@ -1,6 +1,5 @@
 {   
-    "main": [
-    
+    "main": [    
       {
         "ko_title": "환영합니다",
         "en_title": "WELCOME!",
@@ -10,11 +9,7 @@
         "en_desc1": "I'm frontend developer NAHYUN KIM",
         "cn_desc1": "我是前端开发者金娜贤！",
         "jp_desc1": "キム·ナヒョンです！"
-     
-        
-      }
-     
-      
+      }      
     ],
     "info": [
     
@@ -193,23 +188,7 @@
     ],
     
     "project": [
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "MusicBoard",
-        "en_title": "MusicBoard",
-        "cn_title": "MusicBoard",
-        "jp_title": "MusicBoard",
-        "skills": " Next.js / Typescript / MySQL",
-        "ko_desc" : "음악에 관한 의견을 공유할 수 있는 커뮤니티 사이트입니다",
-        "en_desc": "",
-        "cn_desc": "",
-        "jp_desc": "",
-        "days": "5 days",
-        "date": "Nov 2023",
-        "img": "",
-        "main_color": "black",
-        "link":"https://www.notion.so/knhbank/Music-Board-60aa887b597d4d7ba82193b81a7b3cca?pvs=4"
-      },
+     
       {
         "option" : "TOY PRPOJECT",
         "ko_title": "NARCHIVE",

@@ -188,9 +188,6 @@ function Project({setNavOpen}) {
     }
   };
 
-
-  
-
   
 
   const ShowImage = () => {
@@ -219,13 +216,13 @@ function Project({setNavOpen}) {
                  TOTAL</CateLi>
                 <CateLi onClick={() => setSelectedCategory('TEAM PRPOJECT')}
                   style={{fontWeight :selectedCategory === 'TEAM PRPOJECT' ? 'bold' :'normal'}}
-                >TEAM({filterCards().filter(e => e.option === 'TEAM PRPOJECT').length})</CateLi>
+                >TEAM</CateLi>
                 <CateLi onClick={() => setSelectedCategory('TOY PRPOJECT')}
                   style={{fontWeight :selectedCategory === 'TOY PRPOJECT' ? 'bold' :'normal'}}
-                >TOY ({filterCards().filter(e => e.option === 'TOY PRPOJECT').length})</CateLi>
+                >TOY </CateLi>
                 <CateLi onClick={() => setSelectedCategory('CLONE CODING')}
                   style={{fontWeight :selectedCategory === 'CLONE CODING' ? 'bold' :'normal'}}
-                >CLONE ({filterCards().filter(e => e.option === 'CLONE CODING').length})</CateLi>
+                >CLONE</CateLi>
               </CateUl>
               <ModeBtn onClick={ShowImage}>{isActive ? "IMGMode" : "TextMode"}</ModeBtn>
             </CateWrap>

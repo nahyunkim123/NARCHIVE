@@ -11,11 +11,11 @@ import store from "./store"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <Provider store={store}>
-        <BrowserRouter>
-        <PreventScroll />
-          <App />
-        </BrowserRouter>
+        <Provider store={store}>
+          <BrowserRouter>
+            <PreventScroll />
+            <App />
+          </BrowserRouter>
         </Provider>  
 );
 

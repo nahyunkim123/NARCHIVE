@@ -83,8 +83,7 @@ function App() {
                 <PCNav/>
               </Nav>
               <HamBtn>
-
-              <Mnav toggleNav={toggleNav} navOpen={navOpen} setNavOpen={setNavOpen} />
+                <Mnav toggleNav={toggleNav} navOpen={navOpen} setNavOpen={setNavOpen} />
               </HamBtn>
               <GlobalStyle/>
               <DragSet ThemeSelect={ThemeSelect} themeConfig={themeConfig} />
@@ -95,7 +94,7 @@ function App() {
                     <Route path="/*" element={<NotFound/>} />
                   </Routes>
                 </AnimatePresence>
-                <Aside/>
+              <Aside/>
            </>
 
         </ThemeProvider>
