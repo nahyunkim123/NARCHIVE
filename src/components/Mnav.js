@@ -6,7 +6,42 @@ import MLang from '../components/MLang';
 import { styled } from "styled-components";
 
 
+const NavWrap = styled.div`
+  width: 100vw;
+  border-bottom: 1px solid #eee;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000000;
+  transition: all 0.3s; 
 
+  @media screen and (min-width:640px){
+    display: none;
+  }
+  
+`
+const ContainerWrap = styled.div`
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+
+
+`
+
+const Content = styled.div`
+  cursor: pointer;
+  a{
+    color: ${(props) => props.theme.colors.Color};
+  }
+
+`;
 
 const Nav = styled.div`
   position: fixed;
@@ -62,7 +97,7 @@ const LangOp =styled.div`
 
 
 const NavContent = styled.div`
-  flex-basis: 80%;
+  flex-basis: 100%;
   padding-top: 15vh;
   padding-left: 10px;
   position: relative;
@@ -70,10 +105,7 @@ const NavContent = styled.div`
 `;
 
 const HamWrap = styled.div`
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 2000000;
+
 `
 
 const Hamburger = styled.div` 
@@ -86,6 +118,7 @@ const Hamburger = styled.div`
   align-items: center;
   position: relative;
   cursor: pointer;
+  justify-content: center;
   
   
 `;
@@ -93,7 +126,6 @@ const Hamburger = styled.div`
 const Line = styled.div`
     width: 60%;
     height: 2px;
-    margin-left: 7px;
     background-color: #000;
     position: absolute;
     border-radius: 10px;
@@ -137,27 +169,47 @@ function Mnav ({toggleNav,setNavOpen,navOpen}) {
 
   const [sources, setSources] = useState([]);
   const language = useSelector((state) => state.language);
-  
+  const [isActive, setIsActive] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsActive(true);
+    } else {
+      setIsActive(false); 
+    }
+  };
+
   useEffect(() => {
     setSources(data.Nav);
   }, []);
-  
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll); 
+    };
+  }, []);
 
   return (
     <>
+    <NavWrap style={{ height: isActive ? '50px' : '90px' }}>
+      <ContainerWrap>
+          <Content  style={{ fontSize: isActive ? '20px' : '40px' }}>
+            <Link to="/">NARCHIVE</Link>
+          </Content>
+          <HamWrap>
+              <Hamburger onClick={toggleNav} >
+                  
+                <Line navOpen={navOpen}></Line>
+                <Line navOpen={navOpen}></Line>
+                <Line navOpen={navOpen}></Line>
+              
+              </Hamburger>
+          </HamWrap>
+      </ContainerWrap>
+     </NavWrap>
 
-    <HamWrap>
-        <Hamburger onClick={toggleNav} >
-            
-          <Line navOpen={navOpen}></Line>
-          <Line navOpen={navOpen}></Line>
-          <Line navOpen={navOpen}></Line>
-        
-        </Hamburger>
-      </HamWrap>
       <Nav navOpen={navOpen}>
-         
-
         <NavContent>
         
           
@@ -170,15 +222,15 @@ function Mnav ({toggleNav,setNavOpen,navOpen}) {
                             {language === "en" && e.en_nav}
                             {language === "cn" && e.cn_nav}
                             {language === "jp" && e.jp_nav}
-                    <img src={`images/arrow_up_right_icon.png`} alt="arrow" />
-                   </Link>
+                          <img src={`images/arrow_up_right_icon.png`} alt="arrow" />
+                        </Link>
                     </NavLi>
                 )
             })
         }
-        <LangOp>
-          <MLang/>
-        </LangOp>
+            <LangOp>
+              <MLang/>
+            </LangOp>
         </NavContent>
       </Nav>
     </>

@@ -16,18 +16,18 @@ import GlobalStyle from './components/GlobalStyle';
 
 
 
-const Nav = styled.div`
-@media screen and (max-width:769px){
-        display: none;
+// const Nav = styled.div`
+// @media screen and (max-width:769px){
+//         display: none;
         
-    }
-`
-const HamBtn = styled.div`
-    @media screen and (min-width:769px){
-        display: none;
+//     }
+// `
+// const HamBtn = styled.div`
+//     @media screen and (min-width:769px){
+//         display: none;
         
-    }
-`
+//     }
+// `
 
 function App() {
 
@@ -79,12 +79,12 @@ function App() {
       <ThemeProvider theme={DarkMode}>
            
          <>
-              <Nav>
+              {/* <Nav> */}
                 <PCNav/>
-              </Nav>
-              <HamBtn>
+              {/* </Nav>/ */}
+              {/* <HamBtn> */}
                 <Mnav toggleNav={toggleNav} navOpen={navOpen} setNavOpen={setNavOpen} />
-              </HamBtn>
+              {/* </HamBtn> */}
               <GlobalStyle/>
               <DragSet ThemeSelect={ThemeSelect} themeConfig={themeConfig} />
                 <AnimatePresence>

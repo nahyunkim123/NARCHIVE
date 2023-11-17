@@ -188,7 +188,23 @@
     ],
     
     "project": [
-     
+      {
+        "option" : "TOY PRPOJECT",
+        "ko_title": "MusicBoard",
+        "en_title": "MusicBoard",
+        "cn_title": "MusicBoard",
+        "jp_title": "MusicBoard",
+        "skills": " Next.js / TailwindCss / Typescript / MySQL",
+        "ko_desc" : "음악 공유 게시판입니다",
+        "en_desc": "",
+        "cn_desc": "",
+        "jp_desc": "",
+        "days": "7 days",
+        "date": "NOV 2023",
+        "img": "images/musicboard.png",
+        "main_color": "#000",
+        "link":"https://knhbank.notion.site/8d9f6f0b5aa1420bae8374e694323080?pvs=4"
+      },
       {
         "option" : "TOY PRPOJECT",
         "ko_title": "NARCHIVE",
@@ -197,9 +213,9 @@
         "jp_title": "NARCHIVE",
         "skills": "React / styled-component / Redux",
         "ko_desc" : "프론트엔드 개발자 김나현 포트폴리오 사이트입니다",
-        "en_desc": "",
-        "cn_desc": "",
-        "jp_desc": "",
+        "en_desc": "The portfolio website of frontend developer Kim Nahyun",
+        "cn_desc": "前端开发人员金娜贤的个人作品集网站",
+        "jp_desc": "フロントエンド開発者のキム・ナヒョンのポートフォリオサイトです",
         "days": "20 days",
         "date": "NOV 2023",
         "img": "images/NARCHIVE.png",
@@ -302,7 +318,7 @@
         "jp_title": "アラーム",
         "skills": "html / scss / js",
         "ko_desc" : "알람 추가와 D-Day 계산이 가능한 알람 기능입니다",
-        "en_desc": "Alarm feature that allows you to add alarms and calculate D-Days",
+        "en_desc": "Alarm function that allows you to add alarms and calculate D-Days",
         "cn_desc": "允许添加警报并计算D-Day的警报功能",
         "jp_desc": "アラームを追加し、D-Dayを計算できるアラーム機能です",
         "days": "1 day",
