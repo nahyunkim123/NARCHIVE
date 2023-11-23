@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
-
 import { styled } from "styled-components";
 
 
@@ -83,15 +82,15 @@ function Aside() {
 
   return (
     <>
-        <Wrap isActive={isActive}>
-          {isActive && 
+      <Wrap isActive={isActive}>
+        {isActive && 
             <ContentWrap>
               <Content onClick={moveToTop}>
                 <FontAwesomeIcon icon={faChevronUp} />
               </Content>
             </ContentWrap>
-            }
-        </Wrap>
+          }
+      </Wrap>
     </>
   );
 }

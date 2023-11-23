@@ -3,7 +3,6 @@ import { styled } from 'styled-components';
 
 const Content = styled.div`
   width: 100vw;
-
   position: fixed;
   top: 12%;
   transition: opacity 3s ease;

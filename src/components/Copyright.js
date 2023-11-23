@@ -6,7 +6,8 @@ const TxtWrap = styled.div`
   width: 100vw;
   height: 30px;
   position: relative;
-
+  background:  ${(props) => props.theme.colors.BgColor};
+  color: ${(props) => props.theme.colors.Color};
 `
 
 const Txt = styled.div`

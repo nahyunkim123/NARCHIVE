@@ -88,7 +88,7 @@
             "name": "Styledcomponent"
           }
           ,{
-            "name": "TailwindCSS"
+            "name": "Tailwindcss"
           }
           ,{
             "name": "Sass"
@@ -194,7 +194,7 @@
         "en_title": "MusicBoard",
         "cn_title": "MusicBoard",
         "jp_title": "MusicBoard",
-        "skills": " Next.js / TailwindCss / Typescript / MySQL",
+        "skills": " Next.js / Tailwindcss / Typescript / MySQL",
         "ko_desc" : "음악 공유 게시판입니다",
         "en_desc": "",
         "cn_desc": "",
@@ -283,9 +283,9 @@
         "jp_title": "Festival of Busan",
         "skills": "React / styled-component / Rest API",
         "ko_desc" : "API를 활용한 부산 축제 정보 조회 웹사이트입니다",
-        "en_desc": "",
-        "cn_desc": "",
-        "jp_desc": "",
+        "en_desc": "A website for searching festival information of Busan",
+        "cn_desc": "使用API的釜山庆典信息网站",
+        "jp_desc": "釜山ふざん祭まつり情報じょうほうウェブサイト",
         "days": "3 days",
         "date": "Sep 2023",
         "img": "images/festival.png",

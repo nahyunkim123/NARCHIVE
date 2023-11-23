@@ -4,7 +4,6 @@ import { styled } from 'styled-components'
 import data from "./../data/lang.json";
 import './../index.css'
 import Type from './Type';
-import { Reveal } from 'react-reveal';
 
 
 

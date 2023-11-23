@@ -6,7 +6,6 @@ import Skill from "./../components/Skill"
 import Profile from "./../components/Profile"
 import YearBook from "./../components/YearBook"
 import Info from "./../components/Info"
-import Copyright from "./../components/Copyright"
 import Contact from "./../components/Contact"
 import Background from "../components/Background";
 
@@ -46,30 +45,28 @@ function About ({setNavOpen}) {
   return (
 
     <>
-    <Background/>
-    <BG onClick={(()=>setNavOpen(false))}>
-    
-      <motion.div
+      <Background/>
+      <BG onClick={(()=>setNavOpen(false))}>
+      
+        <motion.div
 
-      animate={{ opacity: 1 }}
-      exit={{opacity:0}}
-      transition={{ duration: 1 }}
-    >
-      <Window>
- 
-     
-          <Profile/>
-          <Info/>
-          <Skill/>
-          <Education/>
-          <Wrap>
-            <YearBook/>
-          </Wrap>
-          <Contact/>
-    
-      </Window>
-      </motion.div>
-    
+        animate={{ opacity: 1 }}
+        exit={{opacity:0}}
+        transition={{ duration: 1 }}>
+        <Window>
+
+            <Profile/>
+            <Info/>
+            <Skill/>
+            <Education/>
+            <Wrap>
+              <YearBook/>
+            </Wrap>
+            <Contact/>
+      
+        </Window>
+        </motion.div>
+      
       </BG>
     </>
   );

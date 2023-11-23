@@ -8,7 +8,7 @@ import Aside from './components/Aside';
 import DragSet from "./components/DragSet";
 import Mnav from './components/Mnav';
 import PCNav from './components/PCNav';
-import { ThemeProvider, styled } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import { AnimatePresence } from "framer-motion";
 import GlobalStyle from './components/GlobalStyle';
 import Copyright from './components/Copyright';
@@ -17,18 +17,6 @@ import Copyright from './components/Copyright';
 
 
 
-// const Nav = styled.div`
-// @media screen and (max-width:769px){
-//         display: none;
-        
-//     }
-// `
-// const HamBtn = styled.div`
-//     @media screen and (min-width:769px){
-//         display: none;
-        
-//     }
-// `
 
 function App() {
 
@@ -78,16 +66,11 @@ function App() {
   
  
       <ThemeProvider theme={DarkMode}>
-           
-         <>
-              {/* <Nav> */}
                 <PCNav/>
-              {/* </Nav>/ */}
-              {/* <HamBtn> */}
+                
                 <Mnav toggleNav={toggleNav} navOpen={navOpen} setNavOpen={setNavOpen} />
-              {/* </HamBtn> */}
-              <GlobalStyle/>
-              <DragSet ThemeSelect={ThemeSelect} themeConfig={themeConfig} />
+                <GlobalStyle/>
+                <DragSet ThemeSelect={ThemeSelect} themeConfig={themeConfig} />
                 <AnimatePresence>
                   <Routes location={location} key={location.pathname}>  
                     <Route path="/" element={<About navOpen={navOpen} setNavOpen={setNavOpen} />} />
@@ -97,7 +80,6 @@ function App() {
                 </AnimatePresence>
               <Aside/>
               <Copyright/>
-           </>
 
         </ThemeProvider>
   );

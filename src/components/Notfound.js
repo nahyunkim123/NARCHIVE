@@ -1,8 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import image from './../images/error-404.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft, faHome } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
 
 

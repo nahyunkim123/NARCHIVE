@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { styled } from 'styled-components'
 import data from "./../data/lang.json";
 import './../index.css'
-import { Fade } from 'react-reveal';
 
 
 

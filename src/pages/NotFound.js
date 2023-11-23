@@ -28,7 +28,7 @@ function NotFound() {
       <Content>
         <span>친구 집에 초대받은 개발자가 친구 집을 찾을 수 없었던 이유는?</span>
         <p>정답 : 404호 라서!</p>
-        </Content>
+      </Content>
     </ContentWrap>
   )
 }

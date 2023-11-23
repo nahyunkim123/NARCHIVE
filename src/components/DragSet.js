@@ -5,7 +5,7 @@ import data from "./../data/lang.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faMinus, faMoon, faPlus, faSun } from '@fortawesome/free-solid-svg-icons';
 import Lang from './../components/Lang';
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const NavWrap = styled.div`
   position: fixed;
@@ -30,20 +30,21 @@ const DragBar = styled.div`
   background-color: rgba(250, 250, 250, 0.5);
   border-bottom: 1px solid #e6e6e6;
   backdrop-filter: blur(12px);
-  position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3px;
+  cursor: pointer;
 `;
 
 const Line = styled.div`
-  position: absolute;
-  top: 10px;
-  left: 45%;
+
   width: 20px;
   height: 1px;
   background: gray;
   &:nth-child(2){
-    top: 6px;
-    left: 45%;
   }
 `;
 

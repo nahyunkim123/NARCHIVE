@@ -171,7 +171,7 @@ const CateLi = styled.li`
 function Project({setNavOpen}) {
 
   const [sources, setSources] = useState([]);
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false);
   const language = useSelector((state) => state.language);
   const [selectedCategory, setSelectedCategory] = useState('TOTAL');
   useEffect(() => {
@@ -259,7 +259,7 @@ function Project({setNavOpen}) {
                                     
                                   >
                                     <MainImg>
-                                      <img  src={e.img} alt={e.ko_title}  />
+                                      <img src={e.img} alt={e.ko_title}  />
                                       </MainImg>
                                       </motion.div>
                                   }
@@ -284,11 +284,9 @@ function Project({setNavOpen}) {
                                     <Skill>
                                       {e.skills}
                                     </Skill>
-                                    
                                    
                                     </DescWrap>
-                             
-                                   
+
                                     </Link>
                                     </HoverBg>
                                 </Content>
