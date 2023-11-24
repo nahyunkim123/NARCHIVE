@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { styled } from 'styled-components';
 
 const Content = styled.div`
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 12%;
   transition: opacity 3s ease;
@@ -11,7 +11,7 @@ const Content = styled.div`
   background: none;
   justify-content: center;
   align-items: center;
-  font-size: 15vw;
+  font-size: 15em;
   font-weight: bold;
   @media screen and (max-width:640px){
       display: none;

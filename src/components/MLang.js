@@ -5,17 +5,12 @@ import { useSelector, useDispatch } from "react-redux";
 import { setLanguage, setSelectedLanguage } from "./../store";
 
 const Wrap = styled.div`
-  width: 60%;
-  padding: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content:end;
+  column-gap: 5px;
   font-size: 16px;
-  @media screen and (max-width:640px){
-    font-size: 2em;
-  }
   div {
     cursor: pointer;
-
   }
 `;
 

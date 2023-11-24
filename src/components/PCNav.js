@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 
 const NavWrap = styled.div`
-  width: 100vw;
+  width: 100%;
   border-bottom: 1px solid #eee;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);

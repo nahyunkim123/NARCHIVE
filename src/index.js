@@ -7,14 +7,17 @@ import { BrowserRouter } from 'react-router-dom';
 import PreventScroll from './components/PreventScroll';
 import { Provider } from 'react-redux';
 import store from "./store"
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
         <Provider store={store}>
           <BrowserRouter>
-            <PreventScroll />
-            <App />
+            <HelmetProvider>
+              <PreventScroll />
+              <App />
+            </HelmetProvider>
           </BrowserRouter>
         </Provider>  
 );

@@ -73,8 +73,15 @@
       {
 
         "Frontend": [
+
           {
-            "name": "JavaScript"
+            "name": "React"
+          }
+          ,{
+            "name": "Next.js"
+          },
+          {
+            "name": "Javascript"
           }
           ,
              {
@@ -85,13 +92,13 @@
        
           }
           ,{
-            "name": "Styledcomponent"
+            "name": "styled-component"
           }
           ,{
             "name": "Tailwindcss"
           }
           ,{
-            "name": "Sass"
+            "name": "SASS"
           }
           ,
           {
@@ -105,12 +112,6 @@
           }
           ,{
             "name": "Redux"
-          }
-          ,{
-            "name": "React"
-          }
-          ,{
-            "name": "Next.js"
           }
           ,{
             "name": "TypeScript"
@@ -129,10 +130,6 @@
           ,{
             "name": "express.js"
           }
-     
-        
-
-
         ],
         "Tools": [
           {
@@ -165,20 +162,22 @@
           }
         
         ],
-        "Interest": [
+        "PortfolioSkill": [
           {
             "name": "# React"
+          },
+          {
+            "name": "# styled-component"
+          },
+          {
+            "name": "# Redux"
+          },
+          {
+            "name": "# Figma"
+          },
+          {
+            "name": "# Framer-motion"
           }
-          ,{
-            "name": "# Next.js"
-          }
-          ,{
-            "name": "# Typescript"
-          }
-          ,{
-            "name": "# CSR & SSR"
-          }
-        
         ]
 
 
@@ -196,9 +195,9 @@
         "jp_title": "MusicBoard",
         "skills": " Next.js / Tailwindcss / Typescript / MySQL",
         "ko_desc" : "음악 공유 게시판입니다",
-        "en_desc": "",
-        "cn_desc": "",
-        "jp_desc": "",
+        "en_desc": "Music Sharing Board",
+        "cn_desc": "音乐分享板",
+        "jp_desc": "音楽共有掲示板",
         "days": "7 days",
         "date": "NOV 2023",
         "img": "images/musicboard.png",

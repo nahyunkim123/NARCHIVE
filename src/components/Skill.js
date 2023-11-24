@@ -76,7 +76,7 @@ const Keyword = styled.div`
 
 const KeywordWrap = styled.div`
  
-  font-size: 1em;
+ font-size: 17px;
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 768px) {
@@ -114,7 +114,7 @@ function About() {
       setSources2(data.Skill[0].Backend);
       setSources3(data.Skill[0].Tools);
       setSources4(data.Skill[0].Database);
-      setSources5(data.Skill[0].Interest);
+      setSources5(data.Skill[0].PortfolioSkill);
     }, []);
 
   return (
@@ -171,7 +171,7 @@ function About() {
 
                 </RightCon>
                 <Keyword>
-                    <h3>Interest</h3>
+                    <h3>Applied in website development</h3>
                     <KeywordWrap>
                         {
                             sources5.map((e,i)=>{

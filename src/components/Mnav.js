@@ -7,8 +7,7 @@ import { styled } from "styled-components";
 
 
 const NavWrap = styled.div`
-  width: 100vw;
-  border-bottom: 1px solid #eee;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);
   position: fixed;
@@ -16,15 +15,13 @@ const NavWrap = styled.div`
   right: 0;
   z-index: 10000000;
   transition: all 0.3s; 
-
   @media screen and (min-width:640px){
     display: none;
   }
   
 `
 const ContainerWrap = styled.div`
-  width: 80%;
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -37,6 +34,7 @@ const ContainerWrap = styled.div`
 
 const Content = styled.div`
   cursor: pointer;
+  padding-left: 10px;
   a{
     color: ${(props) => props.theme.colors.Color};
   }
@@ -46,7 +44,7 @@ const Content = styled.div`
 const Nav = styled.div`
   position: fixed;
   top: 0;
-  right: -20px;
+  right: 0px;
   height: 100%;
   z-index: 1000000;
   width: ${(props)=> props.navOpen ? '50vw':'0vw'};
@@ -56,7 +54,10 @@ const Nav = styled.div`
 
   @media screen and (max-width:640px){
     padding: 10px;
-    width: ${(props)=> props.navOpen ? '100vw':'0px'};
+    width: ${(props)=> props.navOpen ? '100%':'0px'};
+  }
+  @media screen and (min-width:640px){
+    display: none;
   }
 
 
@@ -89,23 +90,23 @@ const NavLi = styled.div`
   }
    
 `
+const NavContent = styled.div`
+  height: 90%;
+  position: relative;
+  padding-top: 80px;
+  
+`;
 const LangOp =styled.div`
-  margin-top: 70px;
-  font-size: 1em;
-  margin-left: 20px;
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
 `
 
 
-const NavContent = styled.div`
-  flex-basis: 100%;
-  padding-top: 15vh;
-  padding-left: 10px;
-  position: relative;
-  
-`;
+
 
 const HamWrap = styled.div`
-
+    padding-right: 10px;
 `
 
 const Hamburger = styled.div` 
@@ -169,37 +170,25 @@ function Mnav ({toggleNav,setNavOpen,navOpen}) {
 
   const [sources, setSources] = useState([]);
   const language = useSelector((state) => state.language);
-  const [isActive, setIsActive] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 100) {
-      setIsActive(true);
-    } else {
-      setIsActive(false); 
-    }
-  };
+
+
 
   useEffect(() => {
     setSources(data.Nav);
   }, []);
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll); 
-    };
-  }, []);
+
 
   return (
     <>
-    <NavWrap style={{ height: isActive ? '50px' : '90px' }}>
+    <NavWrap style={{ height:'50px'}}>
       <ContainerWrap>
-          <Content  style={{ fontSize: isActive ? '20px' : '40px' }}>
+          <Content  style={{ fontSize:'20px' }}>
             <Link to="/">NARCHIVE</Link>
           </Content>
           <HamWrap>
               <Hamburger onClick={toggleNav} >
-                  
                 <Line navOpen={navOpen}></Line>
                 <Line navOpen={navOpen}></Line>
                 <Line navOpen={navOpen}></Line>

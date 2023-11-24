@@ -90,9 +90,7 @@ function About() {
             
               <ConUl>
                 
-                    <IMG src={e.img} alt="mainprofile" />
-             
-           
+                <IMG src={e.img} alt="mainprofile" />
                 <Fade bottom delay={200}>
                     <DescWrap>
                         <h3># {e.subtitle1}</h3>

@@ -4,12 +4,13 @@ import { useSelector } from 'react-redux';
 import data from "./../data/lang.json";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
+import MetaTag from '../components/MetaTag';
 
 
 
 
 const BG = styled.div`
-  width: 100vw;
+  width: 100;
   height:auto;
   overflow: hidden;
   background:  ${(props) => props.theme.colors.BgColor};
@@ -200,7 +201,9 @@ function Project({setNavOpen}) {
     <BG onClick={()=>{
       setNavOpen(false)
     }}>
-          
+           <MetaTag
+           title="Project" description="프론트엔드 개발자 김나현 프로젝트입니다" 
+           keywords="프론트엔드, 리액트, 개발자, 포트폴리오, 프론트엔드포트폴리오, 프론트엔드 프로젝트, 토이프로젝트, 팀프로젝트" lang="kr,en,cn,jp"/>
           <ContainerWrap>
        
             <motion.div
@@ -236,9 +239,9 @@ function Project({setNavOpen}) {
               return(
                 <Content key={i}>
                                  
-                    <HoverBg>
-                          <Link to={e.link}>
-                                   <Num>{filterCards().length - i}</Num>
+                      <HoverBg>
+                            <Link to={e.link}>
+                                <Num>{filterCards().length - i}</Num>
                                
           
                                   {

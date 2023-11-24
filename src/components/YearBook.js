@@ -71,7 +71,7 @@ const Title = styled.div`
 `;
 
 const TitleDesc = styled.p`
-    font-size: 2vw;
+    font-size: 2em;
 `
 
 const Year = styled.p`

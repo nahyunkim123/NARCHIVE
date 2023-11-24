@@ -12,7 +12,8 @@ import { ThemeProvider } from 'styled-components';
 import { AnimatePresence } from "framer-motion";
 import GlobalStyle from './components/GlobalStyle';
 import Copyright from './components/Copyright';
-
+import { Helmet } from 'react-helmet-async';
+import MetaTag from './components/MetaTag';
 
 
 
@@ -25,7 +26,7 @@ function App() {
 
   const light = {
     colors : {
-      Primary : "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);",
+      Primary : "#fff",
       Secondary : "#F9F9F9",
       BgColor : "#fff",
       Color : "#101010",
@@ -66,8 +67,9 @@ function App() {
   
  
       <ThemeProvider theme={DarkMode}>
-                <PCNav/>
-                
+              <MetaTag title="NARCHIVE" description="프론트엔드 개발자 김나현 포트폴리오입니다" 
+              keywords="프론트엔드, 리액트, 개발자, 포트폴리오, 프론트엔드포트폴리오" lang="kr,en,cn,jp"/>
+              <PCNav/> 
                 <Mnav toggleNav={toggleNav} navOpen={navOpen} setNavOpen={setNavOpen} />
                 <GlobalStyle/>
                 <DragSet ThemeSelect={ThemeSelect} themeConfig={themeConfig} />
