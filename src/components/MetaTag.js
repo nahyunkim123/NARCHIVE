@@ -7,7 +7,6 @@ const MetaTag = props => {
         <title>{props.title}</title>
         <meta name="description" content={props.description} />
         <meta name="keywords" content={props.keywords} />
-
         <meta property="og:type" content="website" />
         <meta property="og:title" content={props.title} />
         <meta property="og:site_name" content={props.title} />

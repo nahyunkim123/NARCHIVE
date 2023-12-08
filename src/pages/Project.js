@@ -198,9 +198,7 @@ function Project({setNavOpen}) {
 
   return (
 
-    <BG onClick={()=>{
-      setNavOpen(false)
-    }}>
+    <BG onClick={()=>{setNavOpen(false)}}>
            <MetaTag
            title="Project" description="프론트엔드 개발자 김나현 프로젝트입니다" 
            keywords="프론트엔드, 리액트, 개발자, 포트폴리오, 프론트엔드포트폴리오, 프론트엔드 프로젝트, 토이프로젝트, 팀프로젝트" lang="kr,en,cn,jp"/>
@@ -229,74 +227,63 @@ function Project({setNavOpen}) {
               </CateUl>
               <ModeBtn onClick={ShowImage}>{isActive ? "IMGMode" : "TextMode"}</ModeBtn>
             </CateWrap>
-
           <Container>
-        
-
           {
-            filterCards().map((e,i)=>{
-              
+            filterCards().map((e,i)=>{  
               return(
-                <Content key={i}>
-                                 
-                      <HoverBg>
-                            <Link to={e.link}>
-                                <Num>{filterCards().length - i}</Num>
-                               
-          
-                                  {
-                                    isActive ?
-                                    <motion.div
-                                    intial={{  opacity:0}}
-                                    animate={{ opacity: 1 }}
-                                    exit={{opacity:0}}
-                                    
-                                  >
-                                    <MainColor background={`${e.main_color}` }></MainColor>
-                                    </motion.div>
-                                    :
-                                    <motion.div
-                                    intial={{  opacity:0}}
-                                    animate={{ opacity: 1 }}
-                                    exit={{opacity:0}}
-                                    
-                                  >
-                                    <MainImg>
-                                      <img src={e.img} alt={e.ko_title}  />
-                                      </MainImg>
-                                      </motion.div>
-                                  }
-                                   <Cate>
-                                    {e.option}
-                                    </Cate>
-                                   <ContTitle>
-                                    {language === "ko" && e.ko_title}
-                                    {language === "en" && e.en_title}
-                                    {language === "cn" && e.cn_title}
-                                    {language === "jp" && e.jp_title}
-                                    </ContTitle>
-                                    <Desc>
+                <Content key={i}>              
+                  <HoverBg>
+                      <Link to={e.link}>
+                        <Num>{filterCards().length - i}</Num>
+                          {
+                            isActive ?
+                            <motion.div
+                            intial={{  opacity:0}}
+                            animate={{ opacity: 1 }}
+                            exit={{opacity:0}}
+                            
+                          >
+                            <MainColor background={`${e.main_color}` }></MainColor>
+                            </motion.div>
+                            :
+                            <motion.div
+                            intial={{  opacity:0}}
+                            animate={{ opacity: 1 }}
+                            exit={{opacity:0}}
+                            
+                          >
+                            <MainImg>
+                              <img src={e.img} alt={e.ko_title}  />
+                              </MainImg>
+                              </motion.div>
+                          }
+                          <Cate>
+                          {e.option}
+                          </Cate>
+                          <ContTitle>
+                          {language === "ko" && e.ko_title}
+                          {language === "en" && e.en_title}
+                          {language === "cn" && e.cn_title}
+                          {language === "jp" && e.jp_title}
+                          </ContTitle>
+                          <Desc>
 
-                                    {language === "ko" && e.ko_desc}
-                                    {language === "en" && e.en_desc}
-                                    {language === "cn" && e.cn_desc}
-                                    {language === "jp" && e.jp_desc}
-                                    </Desc>
-                                    <DescWrap>
-
-                                    <Skill>
-                                      {e.skills}
-                                    </Skill>
-                                   
-                                    </DescWrap>
-
-                                    </Link>
-                                    </HoverBg>
-                                </Content>
-                                )
-                              })
-                            }
-          
+                          {language === "ko" && e.ko_desc}
+                          {language === "en" && e.en_desc}
+                          {language === "cn" && e.cn_desc}
+                          {language === "jp" && e.jp_desc}
+                          </Desc>
+                          <DescWrap>
+                            <Skill>
+                              {e.skills}
+                            </Skill>
+                          </DescWrap>
+                      </Link>
+                    </HoverBg>
+                  </Content>
+                  )
+                })
+            }
           </Container>
         </motion.div>
       </ContainerWrap>

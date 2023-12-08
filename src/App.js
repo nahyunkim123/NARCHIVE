@@ -12,7 +12,6 @@ import { ThemeProvider } from 'styled-components';
 import { AnimatePresence } from "framer-motion";
 import GlobalStyle from './components/GlobalStyle';
 import Copyright from './components/Copyright';
-import { Helmet } from 'react-helmet-async';
 import MetaTag from './components/MetaTag';
 
 
@@ -67,22 +66,21 @@ function App() {
   
  
       <ThemeProvider theme={DarkMode}>
-              <MetaTag title="NARCHIVE" description="프론트엔드 개발자 김나현 포트폴리오입니다" 
+        <MetaTag title="NARCHIVE" description="프론트엔드 개발자 김나현 포트폴리오입니다" 
               keywords="프론트엔드, 리액트, 개발자, 포트폴리오, 프론트엔드포트폴리오" lang="kr,en,cn,jp"/>
-              <PCNav/> 
-                <Mnav toggleNav={toggleNav} navOpen={navOpen} setNavOpen={setNavOpen} />
-                <GlobalStyle/>
-                <DragSet ThemeSelect={ThemeSelect} themeConfig={themeConfig} />
-                <AnimatePresence>
-                  <Routes location={location} key={location.pathname}>  
-                    <Route path="/" element={<About navOpen={navOpen} setNavOpen={setNavOpen} />} />
-                    <Route path="/project" element={<Project navOpen={navOpen} setNavOpen={setNavOpen}/>} />
-                    <Route path="/*" element={<NotFound/>} />
-                  </Routes>
-                </AnimatePresence>
-              <Aside/>
-              <Copyright/>
-
+          <PCNav/> 
+          <Mnav toggleNav={toggleNav} navOpen={navOpen} setNavOpen={setNavOpen} />
+          <GlobalStyle/>
+          <DragSet ThemeSelect={ThemeSelect} themeConfig={themeConfig} />
+          <AnimatePresence>
+            <Routes location={location} key={location.pathname}>  
+              <Route path="/" element={<About navOpen={navOpen} setNavOpen={setNavOpen} />} />
+              <Route path="/project" element={<Project navOpen={navOpen} setNavOpen={setNavOpen}/>} />
+              <Route path="/*" element={<NotFound/>} />
+            </Routes>
+          </AnimatePresence>
+        <Aside/>
+        <Copyright/>
         </ThemeProvider>
   );
 }

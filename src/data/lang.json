@@ -98,19 +98,6 @@
             "name": "Tailwindcss"
           }
           ,{
-            "name": "SASS"
-          }
-          ,
-          {
-            "name": "Webpack"
-          }
-          ,{
-            "name": "ES6"
-          }
-          ,{
-            "name": "Babel"
-          }
-          ,{
             "name": "Redux"
           }
           ,{
@@ -127,9 +114,6 @@
           {
             "name": "Node.js"
           }
-          ,{
-            "name": "express.js"
-          }
         ],
         "Tools": [
           {
@@ -144,10 +128,6 @@
           ,{
             "name": "Notion"
           }
-          ,{
-            "name": "Slack"
-          }
-      
         
         ],
         "Database": [
@@ -179,11 +159,7 @@
             "name": "# Framer-motion"
           }
         ]
-
-
       }
-
-
     ],
     
     "project": [
@@ -308,7 +284,6 @@
         "img": "images/Quiz.png",
         "link":"https://www.notion.so/knhbank/Let-s-Quiz-cd68864810d64d0ab36f8cd4bb662f2a?pvs=4"
       },
-   
       {
         "option" : "TOY PRPOJECT",
         "ko_title": "알람",
@@ -325,77 +300,8 @@
         "img": "images/Alarm.png",
         "main_color": "linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(217,217,217,1) 35%, rgba(117,126,201,1) 100%)",
         "link":"https://www.notion.so/knhbank/8e2ed640b92e43aa90f3368d9e3b3a0a?pvs=4"
-      },
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "투두 리스트",
-        "en_title": "TO-DO-LIST",
-        "cn_title": "TO-DO-LIST",
-        "jp_title": "TO-DO-LIST",
-        "skills": "html / scss / js",
-        "ko_desc" : "리스트 추가와 삭제가 가능한 투두리스트입니다",
-        "en_desc": "A to-do list with the ability to add and remove items",
-        "cn_desc": "允许添加和删除项目的待办事项列表功能",
-        "jp_desc": "アイテムの追加と削除が可能なタスクリストの機能",
-        "days": "1 day",
-        "date": "Aug 2023",
-        "img": "images/todolist.png",
-        "main_color": "#fff",
-        "link":"https://www.notion.so/knhbank/1b59df2f3e02438b9350c42be8962b97?pvs=4"
-      },
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "계산기",
-        "en_title": "CALCULATOR",
-        "cn_title": "计算器",
-        "jp_title": "計算器",
-        "skills": "html / scss / js",
-        "ko_desc" : "기본적인 사칙연산이 가능한 계산기입니다",
-        "en_desc": "It's a calculator function that can perform basic arithmetic operations",
-        "cn_desc": "这是一个可以进行基本算术运算的计算器功能",
-        "jp_desc": "基本的な四則演算が可能な計算機能です",
-        "days": "2 days",
-        "img": "images/calculator.png",
-        "date": "Aug 2023",
-        "main_color": "#F9F9F9",
-        "link":"https://knhbank.notion.site/bac0d5192aa645fcb9adb2136af098e3?pvs=4"
-      },
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "자판기",
-        "en_title": "VENDING MACHINE",
-        "cn_title": "自动售货机",
-        "jp_title": "自販機",
-        "skills": "html / scss / js",
-        "ko_desc" : "'display: grid' 를 활용해 구현한 자판기입니다",
-        "en_desc": "Vending machine function using 'display: grid'",
-        "cn_desc": "使用 'display: grid' 的自动售货机功能",
-        "jp_desc": "'display:grid'を活用した自動販売機機能",
-        "days": "1 day",
-        "date": "JUL 2023",
-        "img": "images/vendingmachine.png",
-        "main_color": "#FFC1D0",
-        "link":"https://www.notion.so/knhbank/bf5d692d0a694e18aa058668f2e4de3f?pvs=4"
-      },
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "무비리스트",
-        "en_title": "MOVIE LIST",
-        "cn_title": "MOVIE LIST",
-        "jp_title": "MOVIE LIST",
-        "skills": "html / css / js",
-        "ko_desc" : "영화를 주제로 하여 아코디언 및 스크롤 이벤트 연습하기 위해 제작한 홈페이지입니다",
-        "en_desc": "A website created for practicing accordion and scroll event using movies as a theme",
-        "cn_desc": "以电影为主题创建的用于练习手风琴和滚动事件的网站",
-        "jp_desc": "映画をテーマにしたアコーディオンとスクロールイベントの練習のために作成されたウェブサイト",
-        "days": "2 days",
-        "date": "AUG 2023",
-        "img": "images/movielist.png",
-        "main_color": "linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);",
-        "link":"https://www.notion.so/knhbank/Movie-List-9720376152dc42a5b7b47bd52c886daa?pvs=4"
-      },
-  
-  
+      }
+     ,
       {
         "option" : "CLONE CODING",
         "ko_title": "레이카 클론 코딩",

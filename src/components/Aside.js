@@ -47,8 +47,6 @@ const Content = styled.li`
     color: ${(props) => props.theme.colors.Color};
 
   }
-  
-  
 `;
 
 
