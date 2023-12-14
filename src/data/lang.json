@@ -83,50 +83,30 @@
           {
             "name": "Javascript"
           }
-          ,
-             {
-            "name": "HTML5"
-          }
           ,{
-            "name": "CSS3"
-       
-          }
-          ,{
-            "name": "styled-component"
+            "name": "Styled-Components"
           }
           ,{
             "name": "Tailwindcss"
+          }
+          ,{
+            "name": "Emotion"
           }
           ,{
             "name": "Redux"
           }
           ,{
             "name": "TypeScript"
-          },
-          {
-            "name": "Framer-motion"
           }
-          ,{
-            "name": "Emotion"
-          }
-        ],
-        "Backend": [
-          {
-            "name": "Node.js"
-          }
+          
         ],
         "Tools": [
           {
-            "name": "Github"
-          }
-          ,{
-            "name": "Git"
-          }
-          ,{
             "name": "Figma"
-          }
-          ,{
-            "name": "Notion"
+          },{
+            
+              "name": "Framer"
+            
           }
         
         ],
@@ -134,9 +114,7 @@
           {
             "name": "Firebase"
           }
-          ,{
-            "name": "MongoDB"
-          },
+          ,
           {
             "name": "MySQL"
           }
@@ -147,7 +125,7 @@
             "name": "# React"
           },
           {
-            "name": "# styled-component"
+            "name": "# Styled-Components"
           },
           {
             "name": "# Redux"
@@ -178,7 +156,7 @@
         "date": "NOV 2023",
         "img": "images/musicboard.png",
         "main_color": "#000",
-        "link":"https://knhbank.notion.site/Music-Board-60aa887b597d4d7ba82193b81a7b3cca?pvs=4"
+        "link":"https://www.notion.so/knhbank/Music-Board-60aa887b597d4d7ba82193b81a7b3cca?pvs=4"
       },
       {
         "option" : "TOY PRPOJECT",
@@ -195,7 +173,7 @@
         "date": "NOV 2023",
         "img": "images/NARCHIVE.png",
         "main_color": "#eee",
-        "link":"https://knhbank.notion.site/8d9f6f0b5aa1420bae8374e694323080?pvs=4"
+        "link":"https://www.notion.so/knhbank/NARCHIVE-8d9f6f0b5aa1420bae8374e694323080?pvs=4"
       },
 
       {
@@ -213,7 +191,7 @@
         "date": "NOV 2023",
         "img": "images/LUCKY.png",
         "main_color": "#5EC269",
-        "link":"https://knhbank.notion.site/64986d7253a046f098f7f45399e643d4?pvs=4"
+        "link":"https://www.notion.so/knhbank/64986d7253a046f098f7f45399e643d4?pvs=4"
       },
 
       {
@@ -266,54 +244,6 @@
         "img": "images/festival.png",
         "main_color": "#EFF7FE",
         "link":"https://www.notion.so/knhbank/e9292d5e005b4c3fb9e672d9750362ec?pvs=4"
-      },
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "LET'S 퀴즈",
-        "en_title": "LET'S QUIZ",
-        "cn_title": "LET'S 猜谜",
-        "jp_title": "LET'S クイズ",
-        "skills": "React / Tailwindcss",
-        "ko_desc" : "HTML,CSS,JS 문제를 풀 수 있는 웹사이트입니다",
-        "en_desc": "A website where you can solve HTML, CSS, and JavaScript problems",
-        "cn_desc": "一个可以解决HTML、CSS和JavaScript问题的网站",
-        "jp_desc": "HTML、CSS、およびJavaScriptの問題を解くことができるウェブサイトです",
-        "days": "3 days",
-        "date": "Aug 2023",
-        "main_color": "#4E80EE",
-        "img": "images/Quiz.png",
-        "link":"https://www.notion.so/knhbank/Let-s-Quiz-cd68864810d64d0ab36f8cd4bb662f2a?pvs=4"
-      },
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "알람",
-        "en_title": "Alarm",
-        "cn_title": "警报",
-        "jp_title": "アラーム",
-        "skills": "html / scss / js",
-        "ko_desc" : "알람 추가와 D-Day 계산이 가능한 알람 기능입니다",
-        "en_desc": "Alarm function that allows you to add alarms and calculate D-Days",
-        "cn_desc": "允许添加警报并计算D-Day的警报功能",
-        "jp_desc": "アラームを追加し、D-Dayを計算できるアラーム機能です",
-        "days": "1 day",
-        "date": "Aug 2023",
-        "img": "images/Alarm.png",
-        "main_color": "linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(217,217,217,1) 35%, rgba(117,126,201,1) 100%)",
-        "link":"https://www.notion.so/knhbank/8e2ed640b92e43aa90f3368d9e3b3a0a?pvs=4"
-      }
-     ,
-      {
-        "option" : "CLONE CODING",
-        "ko_title": "레이카 클론 코딩",
-        "en_title": "LEICA.KR CLONE CODING",
-        "cn_title": "LEICA.KR CLONE CODING",
-        "jp_title": "LEICA.KR CLONE CODING",
-        "skills": "html / css / js",
-        "days": "5 days",
-        "date": "JUL 2023",
-        "img": "images/Leica.png",
-        "main_color": "#000000",
-        "link":"https://knhbank.notion.site/dcfd0f4fdacb424e9fc497b6a2bd0c81?pvs=4"
       }
     ],
     
