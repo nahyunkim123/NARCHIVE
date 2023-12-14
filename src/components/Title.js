@@ -1,16 +1,16 @@
-import React from 'react'
-import { styled } from 'styled-components'
+import React from 'react';
+import { styled } from 'styled-components';
 
-const Text= styled.h3`
-    font-size: 50px;
-`
+const Text = styled.h3`
+  font-size: 50px;
+`;
 
-function Title({text}) {
+function Title({ text }) {
   return (
     <>
-        <Text>{text}</Text>
+      <Text>{text}</Text>
     </>
-  )
+  );
 }
 
-export default Title
+export default Title;

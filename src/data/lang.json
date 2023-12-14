@@ -1,340 +1,312 @@
-{   
-    "main": [    
-      {
-        "ko_title": "환영합니다",
-        "en_title": "WELCOME!",
-        "cn_title": "欢迎光临 ",
-        "jp_title": "ようこそ ",
-        "ko_desc1": "프론트엔드 개발자 김나현입니다",
-        "en_desc1": "I'm frontend developer NAHYUN KIM",
-        "cn_desc1": "我是前端开发者金娜贤！",
-        "jp_desc1": "キム·ナヒョンです！"
-      }      
-    ],
-    "info": [
-    
-      {
-        "img":"images/mainprofile.jpeg",
-        "title": "ABOUT",
-        "subtitle1":"WHO I AM",
-        "subtitle2":"HOW I WORK",
-        "subtitle3":"WHAT I'M INTERESTED IN",
-        "ko_desc1": "호기심이 많아 다양한 것을 탐구하고 새로운 기술을 배우는 것을 좋아합니다",
-        "ko_desc2": "협업을 중시하며 다양한 사람들과 소통하는 것을 즐깁니다",
-        "ko_desc3": "사용자 경험을 개선하고 직관적인 인터페이스를 갖춘 웹사이트를 구축하는 것에 관심이 있습니다",
-        "en_desc1": "I have a curious mind and enjoy exploring various things and learning new technologies",
-        "en_desc2": "I prioritize collaboration and value communication with diverse people",
-        "en_desc3": "I am interested in improving user experience and building websites with intuitive interfaces",
-        "cn_desc1": "我有着好奇心，喜欢探索各种事物并学习新技术",
-        "cn_desc2": "我重视协作，注重与不同的人进行沟通",
-        "cn_desc3": "我对改善用户体验并构建具有直观界面的网站很感兴趣",
-        "jp_desc1": "私は好奇心があり、さまざまなことを探求し、新しい技術を学ぶことが好きです",
-        "jp_desc2": "私は協力を重視し、さまざまな人々とのコミュニケーションを大切にします",
-        "jp_desc3": "私はユーザーエクスペリエンスを改善し、直感的なインターフェースを備えたウェブサイトを構築することに興味があります"  
-      }
-     
-      
-    ],
-    "Nav": [
-      {  "component":"About",
-        "ko_nav": "소개하기",
-        "en_nav": "INFO",
-        "cn_nav": "自己介绍",
-        "jp_nav": "自己紹介",
-        "link":"/"
-      },
-      { 
-        
-        "component":"Project",
-        "ko_nav": "작업물",
-        "en_nav": "PROJECTS",
-        "cn_nav": "作品集",
-        "jp_nav": "プロジェクト ",
-        "link":"/project"
-      }
-      
-    ],
-
-    "about": [
-      {  "component":"Profile",
-        "title": "Profile"
-      },
-      { "component":"Skill",
-        "title": "Skill"
-      }
-      ,
-      { "component":"Education",
-        "title": "Education"
-      }
-    ],
-
-
-    "Skill": [
-      {
-
-        "Frontend": [
-
-          {
-            "name": "React"
-          }
-          ,{
-            "name": "Next.js"
-          },
-          {
-            "name": "Javascript"
-          }
-          ,{
-            "name": "Styled-Components"
-          }
-          ,{
-            "name": "Tailwindcss"
-          }
-          ,{
-            "name": "Emotion"
-          }
-          ,{
-            "name": "Redux"
-          }
-          ,{
-            "name": "TypeScript"
-          }
-          
-        ],
-        "Tools": [
-          {
-            "name": "Figma"
-          },{
-            
-              "name": "Framer"
-            
-          }
-        
-        ],
-        "Database": [
-          {
-            "name": "Firebase"
-          }
-          ,
-          {
-            "name": "MySQL"
-          }
-        
-        ],
-        "PortfolioSkill": [
-          {
-            "name": "# React"
-          },
-          {
-            "name": "# Styled-Components"
-          },
-          {
-            "name": "# Redux"
-          },
-          {
-            "name": "# Figma"
-          },
-          {
-            "name": "# Framer-motion"
-          }
-        ]
-      }
-    ],
-    
-    "project": [
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "MusicBoard",
-        "en_title": "MusicBoard",
-        "cn_title": "MusicBoard",
-        "jp_title": "MusicBoard",
-        "skills": " Next.js / Tailwindcss / Typescript / MySQL",
-        "ko_desc" : "음악 공유 게시판입니다",
-        "en_desc": "Music Sharing Board",
-        "cn_desc": "音乐分享板",
-        "jp_desc": "音楽共有掲示板",
-        "days": "7 days",
-        "date": "NOV 2023",
-        "img": "images/musicboard.png",
-        "main_color": "#000",
-        "link":"https://www.notion.so/knhbank/Music-Board-60aa887b597d4d7ba82193b81a7b3cca?pvs=4"
-      },
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "NARCHIVE",
-        "en_title": "NARCHIVE",
-        "cn_title": "NARCHIVE",
-        "jp_title": "NARCHIVE",
-        "skills": "React / styled-component / Redux",
-        "ko_desc" : "프론트엔드 개발자 김나현 포트폴리오 사이트입니다",
-        "en_desc": "The portfolio website of frontend developer Kim Nahyun",
-        "cn_desc": "前端开发人员金娜贤的个人作品集网站",
-        "jp_desc": "フロントエンド開発者のキム・ナヒョンのポートフォリオサイトです",
-        "days": "20 days",
-        "date": "NOV 2023",
-        "img": "images/NARCHIVE.png",
-        "main_color": "#eee",
-        "link":"https://www.notion.so/knhbank/NARCHIVE-8d9f6f0b5aa1420bae8374e694323080?pvs=4"
-      },
-
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "오늘의 운세",
-        "en_title": "DAILY HOROSCOPE",
-        "cn_title": "今日运势网站",
-        "jp_title": "今日の運勢ウェブサイト",
-        "skills": " Next.js / Typescript / RESTful API",
-        "ko_desc" : "운세 API를 활용한 오늘의 운세 사이트입니다",
-        "en_desc": "Today's fortune-telling website using fortune API",
-        "cn_desc": "使用占卜API的今日占卜网站",
-        "jp_desc": "占いAPIを利用した今日の占いサイトです",
-        "days": "1 day",
-        "date": "NOV 2023",
-        "img": "images/LUCKY.png",
-        "main_color": "#5EC269",
-        "link":"https://www.notion.so/knhbank/64986d7253a046f098f7f45399e643d4?pvs=4"
-      },
-
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "택배 배송 조회",
-        "en_title": "TRACKING PACKAGE",
-        "cn_title": "自动售货机",
-        "jp_title": "自販機",
-        "skills": " React / Typescript/ Restful API",
-        "ko_desc" : "스마트 택배 API를 활용한 택배 실시간 배송 조회 시스템입니다",
-        "en_desc": "It's a real-time parcel delivery tracking system powered by the Smart Courier API",
-        "cn_desc": "这是一个使用智能快递API的实时包裹配送跟踪系统",
-        "jp_desc": "これはスマート宅配APIを使用したリアルタイムの小包配達追跡システムです",
-        "days": "2 days",
-        "date": "JUL 2023",
-        "img": "images/trackingpost.png",
-        "main_color": "linear-gradient(to right, #fff 0%, #f7f7f7 100%);",
-        "link":"https://www.notion.so/knhbank/dcc803810c624e739a0d9d69ec022b8e?pvs=4"
-      },
-      {
-        "option" : "TEAM PRPOJECT",
-        "ko_title": "그린핑",
-        "en_title": "GREENPING",
-        "cn_title": "GREENPING",
-        "jp_title": "GREENPING",
-        "skills": "React / styled-component / Node.js / Firebase",
-        "ko_desc" : "한국관광공사 API를 활용한 캠핑 예약 웹사이트입니다",
-        "en_desc": "It's a camping reservation website using the Korea Tourism Organization API",
-        "cn_desc": "这是一个使用韩国旅游组织API的露营预订网站",
-        "jp_desc": "韓国観光公社APIを使用したキャンプ予約ウェブサイトです",
-        "days": "28 days",
-        "date": "Sep 2023",
-        "main_color": "#CFFEA8",
-        "img": "images/greenping.png",
-        "link":"https://www.notion.so/knhbank/898cfb8a76e14431b5ee6afbb821c790?pvs=4"
-      },
-      {
-        "option" : "TOY PRPOJECT",
-        "ko_title": "부산 축제 가자!",
-        "en_title": "Festival of Busan",
-        "cn_title": "Festival of Busan",
-        "jp_title": "Festival of Busan",
-        "skills": "React / styled-component / Rest API",
-        "ko_desc" : "API를 활용한 부산 축제 정보 조회 웹사이트입니다",
-        "en_desc": "A website for searching festival information of Busan",
-        "cn_desc": "使用API的釜山庆典信息网站",
-        "jp_desc": "釜山ふざん祭まつり情報じょうほうウェブサイト",
-        "days": "3 days",
-        "date": "Sep 2023",
-        "img": "images/festival.png",
-        "main_color": "#EFF7FE",
-        "link":"https://www.notion.so/knhbank/e9292d5e005b4c3fb9e672d9750362ec?pvs=4"
-      }
-    ],
-    
-    "yearbook":[
-      {
-        "ko_title":"REVIEW",
-        "ko_desc":"동료들의 평가를 담은 공간입니다",
-        "en_title":"YEAR BOOK",
-        "en_subtitle":"How others perceive me",
-        "en_desc":"A Section containing evaluations from colleagues",
-        "cn_title":"同事们的",
-        "cn_subtitle":"别人眼中的我",
-        "cn_desc":"同事们评价的空间",
-        "jp_title":"おれの仲間になれ",
-        "jp_subtitle":"他人から見た私",
-        "jp_desc":"同僚からの評価を収めたスペースです"
-
-      }
-    ],
-   "education" :[
-
+{
+  "main": [
     {
-      "title":"(혼합 + 디지털 컨버전스)React를 활용한 프론트엔드 개발자 양성 (SPA 프로젝트 개발)(A)",
-      "date":"23.06 ~ "
-    },
-    {
-    "title":" 코멘토",
-    "desc":" 프론트엔드 현직자와 함께하는 개발 직무 A to Z 수료",
-    "date":"2023.08 ~ 2023.09"
-    },
-    {
-   "title":"그린온라인캠프",
-   "desc":"디지털역량 제고를 위한 다이나믹 클라이언트 사이드 스크립트 기초 수강",
-   "date":"2023.08 ~ 2023.08"
+      "ko_title": "환영합니다",
+      "en_title": "WELCOME!",
+      "cn_title": "欢迎光临 ",
+      "jp_title": "ようこそ ",
+      "ko_desc1": "프론트엔드 개발자 김나현입니다",
+      "en_desc1": "I'm frontend developer NAHYUN KIM",
+      "cn_desc1": "我是前端开发者金娜贤！",
+      "jp_desc1": "キム·ナヒョンです！"
     }
-   
+  ],
+  "info": [
+    {
+      "img": "images/mainprofile.jpeg",
+      "title": "ABOUT",
+      "subtitle1": "WHO I AM",
+      "subtitle2": "HOW I WORK",
+      "subtitle3": "WHAT I'M INTERESTED IN",
+      "ko_desc1": "호기심이 많아 다양한 것을 탐구하고 새로운 기술을 배우는 것을 좋아합니다",
+      "ko_desc2": "협업을 중시하며 다양한 사람들과 소통하는 것을 즐깁니다",
+      "ko_desc3": "사용자 경험을 개선하고 직관적인 인터페이스를 갖춘 웹사이트를 구축하는 것에 관심이 있습니다",
+      "en_desc1": "I have a curious mind and enjoy exploring various things and learning new technologies",
+      "en_desc2": "I prioritize collaboration and value communication with diverse people",
+      "en_desc3": "I am interested in improving user experience and building websites with intuitive interfaces",
+      "cn_desc1": "我有着好奇心，喜欢探索各种事物并学习新技术",
+      "cn_desc2": "我重视协作，注重与不同的人进行沟通",
+      "cn_desc3": "我对改善用户体验并构建具有直观界面的网站很感兴趣",
+      "jp_desc1": "私は好奇心があり、さまざまなことを探求し、新しい技術を学ぶことが好きです",
+      "jp_desc2": "私は協力を重視し、さまざまな人々とのコミュニケーションを大切にします",
+      "jp_desc3": "私はユーザーエクスペリエンスを改善し、直感的なインターフェースを備えたウェブサイトを構築することに興味があります"
+    }
+  ],
+  "Nav": [
+    {
+      "component": "About",
+      "ko_nav": "소개하기",
+      "en_nav": "INFO",
+      "cn_nav": "自己介绍",
+      "jp_nav": "自己紹介",
+      "link": "/"
+    },
+    {
+      "component": "Project",
+      "ko_nav": "작업물",
+      "en_nav": "PROJECTS",
+      "cn_nav": "作品集",
+      "jp_nav": "プロジェクト ",
+      "link": "/project"
+    }
+  ],
 
-   ] ,
-   "message" :[
+  "about": [
+    { "component": "Profile", "title": "Profile" },
+    { "component": "Skill", "title": "Skill" },
+    { "component": "Education", "title": "Education" }
+  ],
+
+  "Skill": [
+    {
+      "Frontend": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Next.js"
+        },
+        {
+          "name": "Javascript"
+        },
+        {
+          "name": "Styled-Components"
+        },
+        {
+          "name": "Tailwindcss"
+        },
+        {
+          "name": "Emotion"
+        },
+        {
+          "name": "Redux"
+        },
+        {
+          "name": "TypeScript"
+        }
+      ],
+      "Tools": [
+        {
+          "name": "Figma"
+        },
+        {
+          "name": "Framer"
+        }
+      ],
+      "Database": [
+        {
+          "name": "Firebase"
+        },
+        {
+          "name": "MySQL"
+        }
+      ],
+      "PortfolioSkill": [
+        {
+          "name": "# React"
+        },
+        {
+          "name": "# Styled-Components"
+        },
+        {
+          "name": "# Redux"
+        },
+        {
+          "name": "# Figma"
+        },
+        {
+          "name": "# Framer-motion"
+        }
+      ]
+    }
+  ],
+
+  "project": [
+    {
+      "option": "TOY PRPOJECT",
+      "ko_title": "MusicBoard",
+      "en_title": "MusicBoard",
+      "cn_title": "MusicBoard",
+      "jp_title": "MusicBoard",
+      "skills": " Next.js / Tailwindcss / Typescript / MySQL",
+      "ko_desc": "음악 공유 게시판입니다",
+      "en_desc": "Music Sharing Board",
+      "cn_desc": "音乐分享板",
+      "jp_desc": "音楽共有掲示板",
+      "days": "7 days",
+      "date": "NOV 2023",
+      "img": "images/musicboard.png",
+      "main_color": "#000",
+      "link": "https://www.notion.so/knhbank/Music-Board-60aa887b597d4d7ba82193b81a7b3cca?pvs=4"
+    },
+    {
+      "option": "TOY PRPOJECT",
+      "ko_title": "NARCHIVE",
+      "en_title": "NARCHIVE",
+      "cn_title": "NARCHIVE",
+      "jp_title": "NARCHIVE",
+      "skills": "React / styled-component / Redux",
+      "ko_desc": "프론트엔드 개발자 김나현 포트폴리오 사이트입니다",
+      "en_desc": "The portfolio website of frontend developer Kim Nahyun",
+      "cn_desc": "前端开发人员金娜贤的个人作品集网站",
+      "jp_desc": "フロントエンド開発者のキム・ナヒョンのポートフォリオサイトです",
+      "days": "20 days",
+      "date": "NOV 2023",
+      "img": "images/NARCHIVE.png",
+      "main_color": "#eee",
+      "link": "https://www.notion.so/knhbank/NARCHIVE-8d9f6f0b5aa1420bae8374e694323080?pvs=4"
+    },
 
     {
-      "img":"images/Yul.png",
+      "option": "TOY PRPOJECT",
+      "ko_title": "오늘의 운세",
+      "en_title": "DAILY HOROSCOPE",
+      "cn_title": "今日运势网站",
+      "jp_title": "今日の運勢ウェブサイト",
+      "skills": " Next.js / Typescript / RESTful API",
+      "ko_desc": "운세 API를 활용한 오늘의 운세 사이트입니다",
+      "en_desc": "Today's fortune-telling website using fortune API",
+      "cn_desc": "使用占卜API的今日占卜网站",
+      "jp_desc": "占いAPIを利用した今日の占いサイトです",
+      "days": "1 day",
+      "date": "NOV 2023",
+      "img": "images/LUCKY.png",
+      "main_color": "#5EC269",
+      "link": "https://www.notion.so/knhbank/64986d7253a046f098f7f45399e643d4?pvs=4"
+    },
+
+    {
+      "option": "TOY PRPOJECT",
+      "ko_title": "택배 배송 조회",
+      "en_title": "TRACKING PACKAGE",
+      "cn_title": "自动售货机",
+      "jp_title": "自販機",
+      "skills": " React / Typescript/ Restful API",
+      "ko_desc": "스마트 택배 API를 활용한 택배 실시간 배송 조회 시스템입니다",
+      "en_desc": "It's a real-time parcel delivery tracking system powered by the Smart Courier API",
+      "cn_desc": "这是一个使用智能快递API的实时包裹配送跟踪系统",
+      "jp_desc": "これはスマート宅配APIを使用したリアルタイムの小包配達追跡システムです",
+      "days": "2 days",
+      "date": "JUL 2023",
+      "img": "images/trackingpost.png",
+      "main_color": "linear-gradient(to right, #fff 0%, #f7f7f7 100%);",
+      "link": "https://www.notion.so/knhbank/dcc803810c624e739a0d9d69ec022b8e?pvs=4"
+    },
+    {
+      "option": "TEAM PRPOJECT",
+      "ko_title": "그린핑",
+      "en_title": "GREENPING",
+      "cn_title": "GREENPING",
+      "jp_title": "GREENPING",
+      "skills": "React / styled-component / Node.js / Firebase",
+      "ko_desc": "한국관광공사 API를 활용한 캠핑 예약 웹사이트입니다",
+      "en_desc": "It's a camping reservation website using the Korea Tourism Organization API",
+      "cn_desc": "这是一个使用韩国旅游组织API的露营预订网站",
+      "jp_desc": "韓国観光公社APIを使用したキャンプ予約ウェブサイトです",
+      "days": "28 days",
+      "date": "Sep 2023",
+      "main_color": "#CFFEA8",
+      "img": "images/greenping.png",
+      "link": "https://www.notion.so/knhbank/898cfb8a76e14431b5ee6afbb821c790?pvs=4"
+    },
+    {
+      "option": "TOY PRPOJECT",
+      "ko_title": "부산 축제 가자!",
+      "en_title": "Festival of Busan",
+      "cn_title": "Festival of Busan",
+      "jp_title": "Festival of Busan",
+      "skills": "React / styled-component / Rest API",
+      "ko_desc": "API를 활용한 부산 축제 정보 조회 웹사이트입니다",
+      "en_desc": "A website for searching festival information of Busan",
+      "cn_desc": "使用API的釜山庆典信息网站",
+      "jp_desc": "釜山ふざん祭まつり情報じょうほうウェブサイト",
+      "days": "3 days",
+      "date": "Sep 2023",
+      "img": "images/festival.png",
+      "main_color": "#EFF7FE",
+      "link": "https://www.notion.so/knhbank/e9292d5e005b4c3fb9e672d9750362ec?pvs=4"
+    }
+  ],
+
+  "yearbook": [
+    {
+      "ko_title": "REVIEW",
+      "ko_desc": "동료들의 평가를 담은 공간입니다",
+      "en_title": "YEAR BOOK",
+      "en_subtitle": "How others perceive me",
+      "en_desc": "A Section containing evaluations from colleagues",
+      "cn_title": "同事们的",
+      "cn_subtitle": "别人眼中的我",
+      "cn_desc": "同事们评价的空间",
+      "jp_title": "おれの仲間になれ",
+      "jp_subtitle": "他人から見た私",
+      "jp_desc": "同僚からの評価を収めたスペースです"
+    }
+  ],
+  "education": [
+    {
+      "title": "(혼합 + 디지털 컨버전스)React를 활용한 프론트엔드 개발자 양성 (SPA 프로젝트 개발)(A)",
+      "date": "23.06 ~ "
+    },
+    {
+      "title": " 코멘토",
+      "desc": " 프론트엔드 현직자와 함께하는 개발 직무 A to Z 수료",
+      "date": "2023.08 ~ 2023.09"
+    },
+    {
+      "title": "그린온라인캠프",
+      "desc": "디지털역량 제고를 위한 다이나믹 클라이언트 사이드 스크립트 기초 수강",
+      "date": "2023.08 ~ 2023.08"
+    }
+  ],
+  "message": [
+    {
+      "img": "images/Yul.png",
       "content": "나현이와 팀프로젝트를 같이 하며 느낀건데 배움에 대한 궁금증도 많고 이해도가 빨라서 자기가 맡은 역할도 잘해줬을뿐만아니라 다른친구들의 문제도 해결해 주는 똑똑한 친구입니다. 나현이라는 팀원을 만나서 프로젝트를 하는동안 더 밝고 긍정적으로 임할 수 있었던 것 같아요!나현이짱",
       "team": "팀프로젝트 그린핑",
-      "nickname" : "YUL",
-      "cate":"2023"
+      "nickname": "YUL",
+      "cate": "2023"
     },
-    {  "img":"images/Sukite.png",
+    {
+      "img": "images/Sukite.png",
       "content": "팀 프로젝트에서 없어서는 안될 중요한 팀원이었습니다.적극적이고 상냥하며 협동심이 풍부한 팀원은 팀 프로젝트의 성공에 핵심적인 역할을 한다는 것을 나현 팀원을 보면서 다시금 깨달았습니다. 너무 수고하셨고, 앞으로도 더욱 빛나는 개발자로 성장하실 거라 믿어요. 미래가 정말 기대되어요 :)",
       "team": "팀프로젝트 그린핑",
-      "nickname" : "SUKITE",
-      "cate":"2023"
+      "nickname": "SUKITE",
+      "cate": "2023"
     },
     {
-      "img":"images/Jun.png",
+      "img": "images/Jun.png",
       "content": "나현 개발자님은 지식에 대한 집요함이 있습니다. 개발자 공부를 하다보면 꼬리에 꼬리를 무는 정보들로 인해 많은 학습량이 요구되는데, 이를 적극적이고 능동적으로 수행하는 모습이 가까이 있는 사람들로 하여금 감탄을 자아내게 합니다.이러한 집요함이 한편으로는 무언가에 매몰되면 쉬이 빠져나오지 못한다는 인상을 줄 수 있으나,일의 중요도와 우선순위를 구분하며 유연하게 상황에 대처하는 역량도 함께 지니고 있습니다. 흔치 않은 재능을 가진 분이니, 꼭 저와는 다른 회사에 지원하셔서 경쟁하지 않을 수 있도록 해주시면 매우 감사하겠습니다. ",
       "team": "스터디 팀원",
-      "nickname" : "JUN",
-      "cate":"2023"
+      "nickname": "JUN",
+      "cate": "2023"
     },
     {
-      "img":"images/Suho.png",
+      "img": "images/Suho.png",
       "content": "나현이는 친절하고 배려심 넘치는 성격으로 다른 사람들에게 긍정적인 영향을 많이 줍니다. 또 열심히 하는 성격에 공부와 코딩 실력이 탁월합니다. 모르는 걸 물어보면 자기가 또 검색해서 알려줄 정도로 착하고 큰 도움이 됩니다.나현이의 긍정적인 성격은 주변에 큰 에너지를 주고 모두를 기분 좋게 만듭니다!",
       "team": "학원 동료",
-      "nickname" : "SUHO",
-      "cate":"2023"
+      "nickname": "SUHO",
+      "cate": "2023"
     },
     {
-      "img":"images/Anonymous.png",
+      "img": "images/Anonymous.png",
       "content": "같은 조원이였던 사람으로서 평소 배운 실습에 더하여 새로운 것을 많이 만들려고 노력합니다. 그것을 실현시키고자 공부하고 노력하는 모습이 눈에 보여 멋있는사람 인 것 같습니다. ",
       "team": "팀프로젝트 그린핑",
-      "nickname" : "익명함수",
-      "cate":"2023"
+      "nickname": "익명함수",
+      "cate": "2023"
     }
-   
-
-   ] ,
-   "contact" :[
-
+  ],
+  "contact": [
     {
-      "title":"EMAIL"
+      "title": "EMAIL"
     },
     {
-      "title":"GITHUB",
-      "link":"https://github.com/nahyunkim123"
+      "title": "GITHUB",
+      "link": "https://github.com/nahyunkim123"
     },
     {
-      "title":"NOTION",
-      "link":"https://www.notion.so/knhbank/HELLO-NAHYUN-WORLD-04205e48c2964560a1e3dbc24fe95cfa"
+      "title": "NOTION",
+      "link": "https://www.notion.so/knhbank/HELLO-NAHYUN-WORLD-04205e48c2964560a1e3dbc24fe95cfa"
     }
-
-   ] 
-  }
-  
+  ]
+}

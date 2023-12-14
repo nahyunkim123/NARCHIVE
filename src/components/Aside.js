@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import { styled } from "styled-components";
-
+import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { styled } from 'styled-components';
 
 const Wrap = styled.div`
   position: fixed;
@@ -10,20 +9,18 @@ const Wrap = styled.div`
   right: 24px;
   align-items: center;
   z-index: 5000000;
-  opacity: ${(props) => (props ? "1" : "0")}; 
+  opacity: ${(props) => (props ? '1' : '0')};
   transition: opacity 3s ease;
-  @media screen and (max-width:640px){
+  @media screen and (max-width: 640px) {
     display: none;
   }
 `;
-
 
 const ContentWrap = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-`
+`;
 
 const Content = styled.li`
   width: 26px;
@@ -37,18 +34,10 @@ const Content = styled.li`
   text-align: center;
   cursor: pointer;
   font-size: 1.2em;
-  img {
-    width: 23px;
-    height:23px;
-  }
-  
-  
-  svg{
+  svg {
     color: ${(props) => props.theme.colors.Color};
-
   }
 `;
-
 
 function Aside() {
   const [isActive, setIsActive] = useState(false);
@@ -61,33 +50,28 @@ function Aside() {
         setIsActive(false);
       }
     };
-    window.addEventListener("scroll", isActiveClick);
+    window.addEventListener('scroll', isActiveClick);
     return () => {
-      window.removeEventListener("scroll", isActiveClick); 
+      window.removeEventListener('scroll', isActiveClick);
     };
   }, []);
-
-
-
 
   const moveToTop = () =>
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
-
-
 
   return (
     <>
       <Wrap isActive={isActive}>
-        {isActive && 
-            <ContentWrap>
-              <Content onClick={moveToTop}>
-                <FontAwesomeIcon icon={faChevronUp} />
-              </Content>
-            </ContentWrap>
-          }
+        {isActive && (
+          <ContentWrap>
+            <Content onClick={moveToTop}>
+              <FontAwesomeIcon icon={faChevronUp} />
+            </Content>
+          </ContentWrap>
+        )}
       </Wrap>
     </>
   );

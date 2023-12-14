@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { useDispatch } from "react-redux";
-import { setLanguage, setSelectedLanguage } from "./../store";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { useDispatch } from 'react-redux';
+import { setLanguage, setSelectedLanguage } from './../store';
 
 const LanguageSelector = styled.div`
   position: relative;
@@ -30,7 +30,6 @@ const LanguageOptions = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-
 `;
 
 const LanguageOption = styled.li`
@@ -52,10 +51,8 @@ const LanguageOption = styled.li`
 `;
 
 function LanguageSwitcher() {
-
-  const [currentLanguage, setCurrentLanguage] = useState("한국어");
+  const [currentLanguage, setCurrentLanguage] = useState('한국어');
   const [isLanguageOptionsOpen, setIsLanguageOptionsOpen] = useState(false);
-  
 
   const handleLanguageClick = (language) => {
     setCurrentLanguage(language);
@@ -66,15 +63,12 @@ function LanguageSwitcher() {
 
   const handleSelectedLanguageChange = (languageIndex) => {
     dispatch(setSelectedLanguage(languageIndex));
-    setIsLanguageOptionsOpen(false); 
-  
+    setIsLanguageOptionsOpen(false);
   };
 
   const handleLanguageChange = (newLanguage) => {
     dispatch(setLanguage(newLanguage));
-    setIsLanguageOptionsOpen(false); 
- 
-   
+    setIsLanguageOptionsOpen(false);
   };
 
   return (
@@ -86,8 +80,8 @@ function LanguageSwitcher() {
         <LanguageOption
           isopen={isLanguageOptionsOpen}
           onClick={() => {
-            handleLanguageClick("한국어");
-            handleLanguageChange("ko");
+            handleLanguageClick('한국어');
+            handleLanguageChange('ko');
             handleSelectedLanguageChange(1);
           }}
         >
@@ -96,10 +90,9 @@ function LanguageSwitcher() {
         <LanguageOption
           isopen={isLanguageOptionsOpen}
           onClick={() => {
-            handleLanguageClick("ENG");
-            handleLanguageChange("en");
+            handleLanguageClick('ENG');
+            handleLanguageChange('en');
             handleSelectedLanguageChange(2);
-            
           }}
         >
           ENG
@@ -107,8 +100,8 @@ function LanguageSwitcher() {
         <LanguageOption
           isopen={isLanguageOptionsOpen}
           onClick={() => {
-            handleLanguageClick("中文");
-            handleLanguageChange("cn");
+            handleLanguageClick('中文');
+            handleLanguageChange('cn');
             handleSelectedLanguageChange(3);
           }}
         >
@@ -117,8 +110,8 @@ function LanguageSwitcher() {
         <LanguageOption
           isopen={isLanguageOptionsOpen}
           onClick={() => {
-            handleLanguageClick("日本語");
-            handleLanguageChange("jp");
+            handleLanguageClick('日本語');
+            handleLanguageChange('jp');
             handleSelectedLanguageChange(4);
           }}
         >

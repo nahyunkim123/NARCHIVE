@@ -1,6 +1,4 @@
-import { createGlobalStyle } from "styled-components";
-
-
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
  
@@ -13,9 +11,8 @@ const GlobalStyle = createGlobalStyle`
 *{ font-family: 'Pretendard-Regular';}
     ul{list-style:none;}
     body {
-    /* cursor: none; 기본 커서 숨김 */
   }
 
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
