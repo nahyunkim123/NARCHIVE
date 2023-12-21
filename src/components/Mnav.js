@@ -53,7 +53,6 @@ const Nav = styled.div`
   transition: 0.5s;
 
   @media screen and (max-width:640px){
-    padding: 10px;
     width: ${(props)=> props.navOpen ? '100%':'0px'};
   }
   @media screen and (min-width:640px){
@@ -199,9 +198,7 @@ function Mnav ({toggleNav,setNavOpen,navOpen}) {
      </NavWrap>
 
       <Nav navOpen={navOpen}>
-        <NavContent>
-        
-          
+        <NavContent> 
           {
             sources.map((e,i)=>{
                 return(
@@ -216,7 +213,7 @@ function Mnav ({toggleNav,setNavOpen,navOpen}) {
                     </NavLi>
                 )
             })
-        }
+            }
             <LangOp>
               <MLang/>
             </LangOp>

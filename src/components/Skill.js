@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { styled } from 'styled-components';
 import data from './../data/lang.json';
 import './../index.css';
+import Title from './Title';
 
 const Content = styled.div`
   width: 100%;
@@ -20,12 +21,6 @@ const ContentWrap = styled.div`
   }
 `;
 
-const TitleWrap = styled.div`
-  text-align: center;
-  font-family: 'Lexend', sans-serif;
-  font-size: 8vw;
-  font-weight: bold;
-`;
 
 const SkillContent = styled.div`
   margin-top: 40px;
@@ -108,11 +103,10 @@ function About() {
     <>
       <Content>
         <ContentWrap>
-          <TitleWrap>SKILL</TitleWrap>
+          <Title text="SKILL"/>
           <SkillContent>
             <LeftCon>
               <h3>Frontend</h3>
-
               {sources.map((e, i) => {
                 return (
                   <div key={i}>
