@@ -202,7 +202,7 @@ function Mnav ({toggleNav,setNavOpen,navOpen}) {
           {
             sources.map((e,i)=>{
                 return(
-                    <NavLi key={i} >
+                    <NavLi key={e.component} >
                         <Link to={e.link} onClick={()=>setNavOpen(false)}>
                             {language === "ko" && e.ko_nav}
                             {language === "en" && e.en_nav}

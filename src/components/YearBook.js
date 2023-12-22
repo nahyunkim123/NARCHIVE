@@ -67,17 +67,6 @@ const TitleDesc = styled.p`
   font-size: 2em;
 `;
 
-const Year = styled.p`
-  position: absolute;
-  left: 25%;
-  top: -250px;
-  z-index: -1;
-  color: ${(props) => props.theme.colors.BgColor};
-  text-shadow: 0 0 1px ${(props) => props.theme.colors.Color};
-  font-size: 10rem;
-  font-weight: 800;
-  font-family: 'Lexend', sans-serif;
-`;
 
 function YearBook() {
   const [sources, setSources] = useState([]);
@@ -94,9 +83,8 @@ function YearBook() {
       <TitleWrap>
         {sources2.map((e, i) => {
           return (
-            <>
+            <React.Fragment key={i}>
               <Title>
-                <Year>2023</Year>
                 {language === 'ko' && e.ko_title}
                 {language === 'en' && e.en_title}
                 {language === 'cn' && e.cn_title}
@@ -108,15 +96,15 @@ function YearBook() {
                 {language === 'cn' && e.cn_desc}
                 {language === 'jp' && e.jp_desc}
               </TitleDesc>
-            </>
+            </React.Fragment>
           );
         })}
       </TitleWrap>
 
       <MessageWrap>
-        {sources.map((e, i) => {
+        {sources.map((e) => {
           return (
-            <Message key={i}>
+            <Message key={e.nickname}>
               <MWrapper>
                 <img src={e.img} alt={e.name} />
                 <p>

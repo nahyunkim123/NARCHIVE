@@ -95,7 +95,7 @@ function About() {
           <SkillContent>
             {sources.map((e, i) => {
               return (
-                <SkillContent key={i}>
+                <SkillContent key={e.name}>
                   <LeftCon>
                     <Circle>
                       <Line style={{ height: i === 2 && '0px' }}></Line>

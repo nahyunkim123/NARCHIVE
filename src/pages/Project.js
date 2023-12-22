@@ -215,15 +215,6 @@ function Project({ setNavOpen }) {
               >
                 TOY{' '}
               </CateLi>
-              <CateLi
-                onClick={() => setSelectedCategory('CLONE CODING')}
-                style={{
-                  fontWeight:
-                    selectedCategory === 'CLONE CODING' ? 'bold' : 'normal',
-                }}
-              >
-                CLONE
-              </CateLi>
             </CateUl>
             <ModeBtn onClick={ShowImage}>
               {isActive ? 'IMGMode' : 'TextMode'}

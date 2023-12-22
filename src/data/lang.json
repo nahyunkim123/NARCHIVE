@@ -100,23 +100,6 @@
         {
           "name": "MySQL"
         }
-      ],
-      "PortfolioSkill": [
-        {
-          "name": "# React"
-        },
-        {
-          "name": "# Styled-Components"
-        },
-        {
-          "name": "# Redux"
-        },
-        {
-          "name": "# Figma"
-        },
-        {
-          "name": "# Framer-motion"
-        }
       ]
     }
   ],
